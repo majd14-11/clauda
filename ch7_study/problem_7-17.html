@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem 7-17 — SN1 vs E1 Solvolysis in Methanol</title>
+<style>
+:root{
+  --bg:#0f1320; --panel:#171c2e; --panel2:#1e2438; --ink:#e8ecf6; --muted:#9aa6c4;
+  --acc:#5dd6c0; --acc2:#7aa2ff; --warn:#ffb454; --bad:#ff6b81; --good:#52e0a0;
+  --line:#2a3350; --chip:#243049; --canvas:#fafcff;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.65;font-size:17px}
+a{color:var(--acc2);text-decoration:none}
+a:hover{text-decoration:underline}
+header.hero{background:linear-gradient(135deg,#202a4a,#0f1320);padding:46px 22px 38px;text-align:center;border-bottom:1px solid var(--line)}
+header.hero h1{margin:0 0 8px;font-size:2rem;letter-spacing:.3px;color:var(--ink)}
+header.hero p{margin:4px 0;color:var(--muted)}
+header.hero .badge{display:inline-block;background:var(--chip);color:var(--acc);padding:3px 12px;border-radius:999px;font-size:.8rem;margin:6px 4px 0;border:1px solid var(--line)}
+.wrap{max-width:980px;margin:0 auto;padding:30px 22px 80px}
+section{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px 26px;margin:0 0 26px}
+h2{margin:0 0 6px;font-size:1.45rem;color:var(--acc)}
+h3{color:var(--acc2);margin:22px 0 10px;font-size:1.15rem}
+h4{color:#cdd6ee;margin:18px 0 6px;font-size:1.02rem;text-transform:uppercase;letter-spacing:.6px}
+p{margin:10px 0}
+ul,ol{margin:10px 0 10px 4px;padding-left:22px}
+li{margin:6px 0}
+code{background:var(--chip);padding:1px 6px;border-radius:5px;font-size:.92em;color:#ffd9a0}
+.callout{border-radius:12px;padding:13px 16px;margin:16px 0;border:1px solid}
+.key{background:rgba(93,214,192,.08);border-color:rgba(93,214,192,.4)}
+.key::before{content:"KEY POINT";display:block;font-weight:700;color:var(--acc);font-size:.78rem;letter-spacing:1.5px;margin-bottom:4px}
+.warnbox{background:rgba(255,180,84,.08);border-color:rgba(255,180,84,.45)}
+.warnbox::before{content:"WATCH OUT";display:block;font-weight:700;color:var(--warn);font-size:.78rem;letter-spacing:1.5px;margin-bottom:4px}
+.tip{background:rgba(122,162,255,.08);border-color:rgba(122,162,255,.4)}
+.tip::before{content:"WHY IT MATTERS";display:block;font-weight:700;color:var(--acc2);font-size:.78rem;letter-spacing:1.5px;margin-bottom:4px}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.95rem}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:var(--panel2);color:var(--acc)}
+tr:nth-child(even) td{background:rgba(255,255,255,.02)}
+.fig{margin:18px 0;background:var(--canvas);border-radius:12px;padding:18px 14px;border:1px solid var(--line);overflow-x:auto}
+.fig svg{display:block;margin:0 auto;max-width:100%;height:auto}
+.fig figcaption{color:#445064;font-size:.88rem;margin-top:10px;text-align:center;font-style:italic}
+.steplabel{display:inline-block;background:var(--acc2);color:#0b1326;padding:4px 12px;border-radius:6px;font-weight:700;font-size:.85rem;letter-spacing:.5px;margin-bottom:6px}
+.problem-box{background:var(--panel2);border-left:4px solid var(--warn);padding:14px 18px;border-radius:0 10px 10px 0;margin:0 0 22px}
+.problem-box h2{color:var(--warn);font-size:1.1rem;margin:0 0 6px;letter-spacing:1px}
+.products-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0}
+.products-grid .fig{margin:0}
+.back-link{display:inline-block;margin-bottom:18px;color:var(--muted);font-size:.92rem}
+@media(max-width:720px){.products-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>Problem 7-17 &mdash; SN1 vs E1 Solvolysis</h1>
+  <p>Solvolysis of 2-bromo-2,3,3-trimethylbutane in methanol</p>
+  <div>
+    <span class="badge">Mechanisms</span>
+    <span class="badge">Curved-arrow notation</span>
+    <span class="badge">Solvent role compared</span>
+  </div>
+</header>
+
+<div class="wrap">
+
+<a class="back-link" href="index.html">&larr; Back to Chapter 7 study guide</a>
+
+<div class="problem-box">
+  <h2>PROBLEM 7-17</h2>
+  <p style="margin:6px 0">SN1 substitution and E1 elimination frequently compete in the same reaction.</p>
+  <p style="margin:6px 0"><b>(a)</b> Propose a mechanism and predict the products for the solvolysis of <b>2-bromo-2,3,3-trimethylbutane</b> in methanol.</p>
+  <p style="margin:6px 0"><b>(b)</b> Compare the function of the solvent (methanol) in the E1 and SN1 reactions.</p>
+</div>
+
+<!-- ============================ SETUP =========================== -->
+<section>
+  <h2>Setting Up the Problem</h2>
+
+  <p>The substrate is a <b>tertiary alkyl bromide</b>. Methanol is a polar, protic, <em>weakly</em>&nbsp;nucleophilic and <em>weakly</em>&nbsp;basic solvent. Tertiary halide + polar protic solvent &rarr; <b>SN1 / E1</b> conditions, with both pathways sharing a common rate-determining step (ionization to form a carbocation).</p>
+
+  <div class="fig">
+    <!-- Starting material: (CH3)2C(Br)-C(CH3)3 -->
+    <svg viewBox="0 0 560 230" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue',Arial,sans-serif" font-size="20">
+      <style>
+        .atom{fill:#101a2c}
+        .br{fill:#a1331c;font-weight:700}
+        .bond{stroke:#101a2c;stroke-width:2;fill:none;stroke-linecap:round}
+        .label{fill:#445064;font-size:14px;font-style:italic}
+      </style>
+      <!-- Title -->
+      <text x="280" y="24" text-anchor="middle" class="label">2-bromo-2,3,3-trimethylbutane</text>
+
+      <!-- Left carbon (C2): center at (200,130) -->
+      <!-- Right carbon (C3): center at (340,130) -->
+      <!-- Central C-C bond -->
+      <line class="bond" x1="218" y1="130" x2="322" y2="130"/>
+      <!-- Left C labels and substituents -->
+      <text class="atom" x="200" y="137" text-anchor="middle">C</text>
+      <!-- up CH3 on C2 -->
+      <line class="bond" x1="194" y1="118" x2="160" y2="80"/>
+      <text class="atom" x="148" y="76" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="13">3</tspan></text>
+      <!-- down-left CH3 on C2 -->
+      <line class="bond" x1="190" y1="142" x2="150" y2="180"/>
+      <text class="atom" x="124" y="195" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="13">3</tspan></text>
+      <!-- down Br on C2 -->
+      <line class="bond" x1="206" y1="142" x2="218" y2="186"/>
+      <text class="br" x="220" y="208" text-anchor="middle">Br</text>
+
+      <!-- Right C (C3) -->
+      <text class="atom" x="340" y="137" text-anchor="middle">C</text>
+      <!-- up CH3 on C3 -->
+      <line class="bond" x1="346" y1="118" x2="380" y2="80"/>
+      <text class="atom" x="392" y="76" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="13">3</tspan></text>
+      <!-- right CH3 on C3 -->
+      <line class="bond" x1="358" y1="130" x2="402" y2="130"/>
+      <text class="atom" x="430" y="137" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="13">3</tspan></text>
+      <!-- down CH3 on C3 -->
+      <line class="bond" x1="346" y1="142" x2="380" y2="180"/>
+      <text class="atom" x="408" y="195" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="13">3</tspan></text>
+
+      <!-- Carbon position labels -->
+      <text class="label" x="200" y="160" text-anchor="middle">C2 (3&deg;)</text>
+      <text class="label" x="340" y="160" text-anchor="middle">C3 (quat.)</text>
+    </svg>
+    <figcaption>Substrate. C2 bears the leaving group; C3 is quaternary (no H&rsquo;s on C3 itself).</figcaption>
+  </div>
+
+  <div class="callout warnbox">
+    The neighbouring carbon (C3) is <b>quaternary</b> &mdash; it has zero hydrogens of its own. So E1 elimination cannot place the double bond between C2 and C3. The only possible &beta;-hydrogens are on the <b>methyl groups attached to C2</b>, giving exclusively a terminal alkene.
+  </div>
+</section>
+
+<!-- ============================ PART A =========================== -->
+<section>
+  <h2>(a) Mechanism &amp; Products</h2>
+
+  <p>Both SN1 and E1 begin with the <b>same slow ionization step</b>. The two pathways diverge only after the carbocation has formed.</p>
+
+  <!-- =================== STEP 1: IONIZATION =================== -->
+  <h3>Step 1 &mdash; Ionization (rate-determining, common to both paths)</h3>
+  <p>The polar protic solvent stabilizes the developing ions, allowing the C&ndash;Br bond to break heterolytically. A tertiary carbocation forms; bromide leaves with the bonding pair.</p>
+
+  <div class="fig">
+    <svg viewBox="0 0 880 240" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue',Arial,sans-serif" font-size="19">
+      <defs>
+        <marker id="ah1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+          <path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/>
+        </marker>
+      </defs>
+      <style>
+        .atom{fill:#101a2c}
+        .br{fill:#a1331c;font-weight:700}
+        .plus{fill:#c0392b;font-weight:700;font-size:18px}
+        .bond{stroke:#101a2c;stroke-width:2;fill:none;stroke-linecap:round}
+        .arrow{stroke:#c0392b;stroke-width:2;fill:none}
+        .label{fill:#445064;font-size:13px;font-style:italic}
+      </style>
+
+      <!-- LEFT: substrate -->
+      <line class="bond" x1="138" y1="120" x2="222" y2="120"/>
+      <text class="atom" x="120" y="127" text-anchor="middle">C</text>
+      <line class="bond" x1="114" y1="108" x2="84" y2="76"/>
+      <text class="atom" x="60" y="72" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <line class="bond" x1="110" y1="132" x2="80" y2="170"/>
+      <text class="atom" x="56" y="186" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <line class="bond" x1="126" y1="132" x2="138" y2="180"/>
+      <text class="br" x="140" y="200" text-anchor="middle">Br</text>
+      <text class="atom" x="240" y="127" text-anchor="middle">C</text>
+      <line class="bond" x1="246" y1="108" x2="276" y2="76"/>
+      <text class="atom" x="298" y="72" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <line class="bond" x1="258" y1="120" x2="296" y2="120"/>
+      <text class="atom" x="320" y="127" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <line class="bond" x1="246" y1="132" x2="276" y2="170"/>
+      <text class="atom" x="300" y="186" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+
+      <!-- Curved arrow: from C-Br bond midpoint to Br -->
+      <path class="arrow" d="M 130,150 Q 110,175 132,188" marker-end="url(#ah1)"/>
+
+      <!-- Reaction arrow -->
+      <line class="bond" x1="370" y1="120" x2="450" y2="120" stroke-width="1.5"/>
+      <polygon points="450,120 442,116 442,124" fill="#101a2c"/>
+      <text class="label" x="410" y="112" text-anchor="middle">slow</text>
+
+      <!-- RIGHT: carbocation + bromide -->
+      <text class="atom" x="510" y="127" text-anchor="middle">C</text>
+      <text class="plus" x="528" y="116">+</text>
+      <line class="bond" x1="504" y1="108" x2="474" y2="76"/>
+      <text class="atom" x="450" y="72" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <line class="bond" x1="500" y1="132" x2="470" y2="170"/>
+      <text class="atom" x="446" y="186" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <line class="bond" x1="528" y1="120" x2="612" y2="120"/>
+      <text class="atom" x="630" y="127" text-anchor="middle">C</text>
+      <line class="bond" x1="636" y1="108" x2="666" y2="76"/>
+      <text class="atom" x="688" y="72" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <line class="bond" x1="648" y1="120" x2="686" y2="120"/>
+      <text class="atom" x="710" y="127" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <line class="bond" x1="636" y1="132" x2="666" y2="170"/>
+      <text class="atom" x="690" y="186" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+
+      <!-- Plus sign separator and bromide -->
+      <text class="atom" x="770" y="127" text-anchor="middle">+</text>
+      <text class="br" x="820" y="127" text-anchor="middle">:Br:</text>
+      <text class="plus" x="840" y="118" font-size="14">&minus;</text>
+
+      <text class="label" x="560" y="220" text-anchor="middle">tertiary carbocation (planar at C+)</text>
+    </svg>
+    <figcaption>Step 1: heterolytic loss of bromide gives the 3&deg; carbocation. Curved arrow shows the C&ndash;Br bonding pair leaving with Br.</figcaption>
+  </div>
+
+  <div class="callout key">
+    The carbocation is already tertiary and reasonably stable. A 1,2&#8209;methyl shift from C3 would just move the (+) onto the symmetrically equivalent neighbouring carbon &mdash; same connectivity, same stability &mdash; so <b>no productive rearrangement</b>. The two pathways now branch from this one cation.
+  </div>
+
+  <!-- =================== STEP 2 SN1 =================== -->
+  <h3>Step 2a (SN1) &mdash; Methanol attacks the carbocation</h3>
+  <p>A lone pair on the methanol oxygen forms a bond to C+, giving a protonated ether (an oxonium ion).</p>
+
+  <div class="fig">
+    <svg viewBox="0 0 880 230" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue',Arial,sans-serif" font-size="19">
+      <defs>
+        <marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+          <path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/>
+        </marker>
+      </defs>
+      <style>
+        .atom{fill:#101a2c}
+        .ox{fill:#1f4d8a;font-weight:700}
+        .plus{fill:#c0392b;font-weight:700;font-size:18px}
+        .bond{stroke:#101a2c;stroke-width:2;fill:none;stroke-linecap:round}
+        .arrow{stroke:#c0392b;stroke-width:2;fill:none}
+        .label{fill:#445064;font-size:13px;font-style:italic}
+      </style>
+
+      <!-- LEFT: cation -->
+      <text class="atom" x="120" y="127" text-anchor="middle">C</text>
+      <text class="plus" x="138" y="116">+</text>
+      <line class="bond" x1="114" y1="108" x2="84" y2="76"/>
+      <text class="atom" x="60" y="72" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <line class="bond" x1="110" y1="132" x2="80" y2="170"/>
+      <text class="atom" x="56" y="186" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <line class="bond" x1="138" y1="120" x2="222" y2="120"/>
+      <text class="atom" x="240" y="127" text-anchor="middle">C</text>
+      <line class="bond" x1="246" y1="108" x2="276" y2="76"/>
+      <text class="atom" x="298" y="72" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <line class="bond" x1="258" y1="120" x2="296" y2="120"/>
+      <text class="atom" x="320" y="127" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <line class="bond" x1="246" y1="132" x2="276" y2="170"/>
+      <text class="atom" x="300" y="186" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+
+      <!-- Methanol coming in from below the C+ -->
+      <text class="ox" x="155" y="200" text-anchor="middle">H&ndash;<tspan class="ox">O</tspan>&ndash;CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <!-- arrow from O lone pair up to C+ -->
+      <path class="arrow" d="M 158,182 Q 145,165 130,140" marker-end="url(#ah2)"/>
+
+      <!-- Reaction arrow -->
+      <line class="bond" x1="370" y1="120" x2="450" y2="120" stroke-width="1.5"/>
+      <polygon points="450,120 442,116 442,124" fill="#101a2c"/>
+
+      <!-- RIGHT: oxonium intermediate -->
+      <text class="atom" x="510" y="127" text-anchor="middle">C</text>
+      <line class="bond" x1="504" y1="108" x2="474" y2="76"/>
+      <text class="atom" x="450" y="72" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <line class="bond" x1="500" y1="132" x2="470" y2="170"/>
+      <text class="atom" x="446" y="186" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <!-- O attached below right -->
+      <line class="bond" x1="516" y1="132" x2="546" y2="170"/>
+      <text class="ox" x="568" y="186" text-anchor="middle">O</text>
+      <text class="plus" x="585" y="178">+</text>
+      <text class="atom" x="568" y="208" text-anchor="middle" font-size="16">H</text>
+      <line class="bond" x1="584" y1="186" x2="616" y2="186"/>
+      <text class="atom" x="650" y="193" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <!-- right C(CH3)3 -->
+      <line class="bond" x1="528" y1="120" x2="612" y2="120"/>
+      <text class="atom" x="630" y="127" text-anchor="middle">C</text>
+      <line class="bond" x1="636" y1="108" x2="666" y2="76"/>
+      <text class="atom" x="688" y="72" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <line class="bond" x1="648" y1="120" x2="686" y2="120"/>
+      <text class="atom" x="710" y="127" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <line class="bond" x1="636" y1="132" x2="666" y2="170"/>
+      <text class="atom" x="690" y="186" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+
+      <text class="label" x="560" y="225" text-anchor="middle">protonated methyl ether (oxonium)</text>
+    </svg>
+    <figcaption>Step 2a: methanol uses an oxygen lone pair to attack the planar 3&deg; cation.</figcaption>
+  </div>
+
+  <!-- =================== STEP 3 SN1 =================== -->
+  <h3>Step 3a (SN1) &mdash; A second methanol deprotonates the oxonium</h3>
+  <p>Another solvent molecule plucks the proton off the positively charged oxygen, giving the neutral methyl ether and a methyloxonium ion (CH<sub>3</sub>OH<sub>2</sub><sup>+</sup>).</p>
+
+  <div class="fig">
+    <svg viewBox="0 0 900 230" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue',Arial,sans-serif" font-size="19">
+      <defs>
+        <marker id="ah3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+          <path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/>
+        </marker>
+      </defs>
+      <style>
+        .atom{fill:#101a2c}
+        .ox{fill:#1f4d8a;font-weight:700}
+        .plus{fill:#c0392b;font-weight:700;font-size:18px}
+        .bond{stroke:#101a2c;stroke-width:2;fill:none;stroke-linecap:round}
+        .arrow{stroke:#c0392b;stroke-width:2;fill:none}
+        .label{fill:#445064;font-size:13px;font-style:italic}
+      </style>
+
+      <!-- LEFT: oxonium with second MeOH -->
+      <text class="atom" x="120" y="100" text-anchor="middle">R&ndash;<tspan class="ox">O</tspan></text>
+      <text class="plus" x="146" y="92">+</text>
+      <text class="atom" x="120" y="130" text-anchor="middle" font-size="16">H</text>
+      <line class="bond" x1="135" y1="100" x2="170" y2="100"/>
+      <text class="atom" x="200" y="107" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <text class="label" x="105" y="148" text-anchor="middle">R = (CH<tspan baseline-shift="sub" font-size="11">3</tspan>)<tspan baseline-shift="sub" font-size="11">2</tspan>C&ndash;C(CH<tspan baseline-shift="sub" font-size="11">3</tspan>)<tspan baseline-shift="sub" font-size="11">3</tspan></text>
+
+      <!-- Second methanol below H -->
+      <text class="ox" x="120" y="200" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12" fill="#1f4d8a">3</tspan>&ndash;<tspan class="ox">O</tspan>&ndash;H</text>
+      <!-- arrow from O lone pair to H -->
+      <path class="arrow" d="M 128,178 Q 122,160 122,140" marker-end="url(#ah3)"/>
+      <!-- arrow from O-H bond to O -->
+      <path class="arrow" d="M 130,108 Q 145,90 138,80" marker-end="url(#ah3)"/>
+
+      <!-- Reaction arrow -->
+      <line class="bond" x1="320" y1="110" x2="400" y2="110" stroke-width="1.5"/>
+      <polygon points="400,110 392,106 392,114" fill="#101a2c"/>
+
+      <!-- RIGHT: neutral ether + protonated methanol -->
+      <text class="atom" x="470" y="117" text-anchor="middle">C</text>
+      <line class="bond" x1="464" y1="98" x2="434" y2="66"/>
+      <text class="atom" x="410" y="62" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <line class="bond" x1="460" y1="122" x2="430" y2="160"/>
+      <text class="atom" x="406" y="176" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <line class="bond" x1="476" y1="122" x2="506" y2="160"/>
+      <text class="ox" x="528" y="176" text-anchor="middle">O</text>
+      <line class="bond" x1="544" y1="176" x2="576" y2="176"/>
+      <text class="atom" x="610" y="183" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <line class="bond" x1="488" y1="110" x2="572" y2="110"/>
+      <text class="atom" x="590" y="117" text-anchor="middle">C</text>
+      <line class="bond" x1="596" y1="98" x2="626" y2="66"/>
+      <text class="atom" x="648" y="62" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <line class="bond" x1="608" y1="110" x2="646" y2="110"/>
+      <text class="atom" x="670" y="117" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <line class="bond" x1="596" y1="122" x2="626" y2="160"/>
+      <text class="atom" x="650" y="176" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+
+      <text class="atom" x="730" y="117" text-anchor="middle">+</text>
+      <text class="ox" x="800" y="117" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12" fill="#1f4d8a">3</tspan><tspan class="ox">OH</tspan><tspan baseline-shift="sub" font-size="12" fill="#1f4d8a">2</tspan></text>
+      <text class="plus" x="855" y="108">+</text>
+
+      <text class="label" x="490" y="218" text-anchor="middle">SN1 product: 2-methoxy-2,3,3-trimethylbutane</text>
+    </svg>
+    <figcaption>Step 3a: a second methanol acts as the base in this proton transfer, neutralizing the oxonium.</figcaption>
+  </div>
+
+  <!-- =================== STEP 2 E1 =================== -->
+  <h3>Step 2b (E1) &mdash; Methanol abstracts a &beta;-hydrogen</h3>
+  <p>Methanol can act as a (weak) base instead of a nucleophile. It removes one of the nine equivalent &beta;-hydrogens on the methyls bonded to C+, while the C&ndash;H bonding pair forms the new &pi; bond. C3 has no hydrogens of its own, so a C2&ndash;C3 double bond is impossible &mdash; only a <b>terminal alkene</b> can form.</p>
+
+  <div class="fig">
+    <svg viewBox="0 0 900 240" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue',Arial,sans-serif" font-size="19">
+      <defs>
+        <marker id="ah4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+          <path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/>
+        </marker>
+      </defs>
+      <style>
+        .atom{fill:#101a2c}
+        .ox{fill:#1f4d8a;font-weight:700}
+        .plus{fill:#c0392b;font-weight:700;font-size:18px}
+        .bond{stroke:#101a2c;stroke-width:2;fill:none;stroke-linecap:round}
+        .dbond{stroke:#101a2c;stroke-width:2;fill:none}
+        .arrow{stroke:#c0392b;stroke-width:2;fill:none}
+        .label{fill:#445064;font-size:13px;font-style:italic}
+        .hi{fill:#c0392b;font-weight:700}
+      </style>
+
+      <!-- LEFT: cation with one methyl drawn out as CH2-H -->
+      <!-- Show beta H on upper-left CH3 explicitly: H-CH2- -->
+      <text class="hi" x="38" y="60" text-anchor="middle">H</text>
+      <line class="bond" x1="48" y1="60" x2="74" y2="60"/>
+      <text class="atom" x="100" y="68" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">2</tspan></text>
+      <line class="bond" x1="118" y1="76" x2="142" y2="108"/>
+      <!-- C+ -->
+      <text class="atom" x="160" y="127" text-anchor="middle">C</text>
+      <text class="plus" x="178" y="116">+</text>
+      <!-- second methyl on C+ -->
+      <line class="bond" x1="150" y1="132" x2="120" y2="170"/>
+      <text class="atom" x="96" y="186" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <!-- bond to C(CH3)3 -->
+      <line class="bond" x1="178" y1="120" x2="262" y2="120"/>
+      <text class="atom" x="280" y="127" text-anchor="middle">C</text>
+      <line class="bond" x1="286" y1="108" x2="316" y2="76"/>
+      <text class="atom" x="338" y="72" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <line class="bond" x1="298" y1="120" x2="336" y2="120"/>
+      <text class="atom" x="360" y="127" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <line class="bond" x1="286" y1="132" x2="316" y2="170"/>
+      <text class="atom" x="340" y="186" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+
+      <!-- Methanol acting as base, above-left -->
+      <text class="ox" x="40" y="36" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12" fill="#1f4d8a">3</tspan>&ndash;<tspan class="ox">O</tspan>&ndash;H</text>
+
+      <!-- Arrow 1: O lone pair grabs the H -->
+      <path class="arrow" d="M 18,42 Q 14,52 30,58" marker-end="url(#ah4)"/>
+      <!-- Arrow 2: C-H bond becomes pi bond -->
+      <path class="arrow" d="M 96,68 Q 130,90 152,108" marker-end="url(#ah4)"/>
+
+      <!-- Reaction arrow -->
+      <line class="bond" x1="410" y1="120" x2="490" y2="120" stroke-width="1.5"/>
+      <polygon points="490,120 482,116 482,124" fill="#101a2c"/>
+
+      <!-- RIGHT: alkene + protonated methanol -->
+      <!-- Terminal CH2= -->
+      <text class="atom" x="540" y="100" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">2</tspan></text>
+      <!-- Double bond -->
+      <line class="dbond" x1="556" y1="100" x2="592" y2="100"/>
+      <line class="dbond" x1="556" y1="108" x2="592" y2="108"/>
+      <!-- =C(CH3)- -->
+      <text class="atom" x="610" y="107" text-anchor="middle">C</text>
+      <line class="bond" x1="606" y1="120" x2="586" y2="160"/>
+      <text class="atom" x="566" y="176" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <!-- bond to t-Bu -->
+      <line class="bond" x1="628" y1="100" x2="712" y2="100"/>
+      <text class="atom" x="730" y="107" text-anchor="middle">C</text>
+      <line class="bond" x1="736" y1="88" x2="766" y2="56"/>
+      <text class="atom" x="788" y="52" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <line class="bond" x1="748" y1="100" x2="786" y2="100"/>
+      <text class="atom" x="810" y="107" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      <line class="bond" x1="736" y1="112" x2="766" y2="150"/>
+      <text class="atom" x="790" y="166" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+
+      <!-- + CH3OH2+ -->
+      <text class="atom" x="600" y="210" text-anchor="middle">+ &nbsp; CH<tspan baseline-shift="sub" font-size="12">3</tspan>OH<tspan baseline-shift="sub" font-size="12">2</tspan></text>
+      <text class="plus" x="700" y="200">+</text>
+
+      <text class="label" x="660" y="232" text-anchor="middle">E1 product: 2,3,3-trimethyl-1-butene</text>
+    </svg>
+    <figcaption>Step 2b: methanol removes a &beta;-H from a methyl on C+; the C&ndash;H electrons form the C=C &pi; bond. Only a terminal alkene is possible because C3 carries no &beta;-hydrogens.</figcaption>
+  </div>
+
+  <h3>Predicted products</h3>
+
+  <div class="products-grid">
+    <!-- SN1 product -->
+    <div class="fig">
+      <svg viewBox="0 0 380 230" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue',Arial,sans-serif" font-size="19">
+        <style>
+          .atom{fill:#101a2c}
+          .ox{fill:#1f4d8a;font-weight:700}
+          .bond{stroke:#101a2c;stroke-width:2;fill:none;stroke-linecap:round}
+          .label{fill:#445064;font-size:13px;font-style:italic}
+        </style>
+        <text class="label" x="190" y="22" text-anchor="middle">SN1 product</text>
+        <line class="bond" x1="118" y1="120" x2="202" y2="120"/>
+        <text class="atom" x="100" y="127" text-anchor="middle">C</text>
+        <line class="bond" x1="94" y1="108" x2="64" y2="76"/>
+        <text class="atom" x="40" y="72" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+        <line class="bond" x1="90" y1="132" x2="60" y2="170"/>
+        <text class="atom" x="36" y="186" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+        <line class="bond" x1="106" y1="132" x2="118" y2="180"/>
+        <text class="ox" x="120" y="200" text-anchor="middle">OCH<tspan baseline-shift="sub" font-size="12" fill="#1f4d8a">3</tspan></text>
+        <text class="atom" x="220" y="127" text-anchor="middle">C</text>
+        <line class="bond" x1="226" y1="108" x2="256" y2="76"/>
+        <text class="atom" x="278" y="72" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+        <line class="bond" x1="238" y1="120" x2="276" y2="120"/>
+        <text class="atom" x="300" y="127" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+        <line class="bond" x1="226" y1="132" x2="256" y2="170"/>
+        <text class="atom" x="280" y="186" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      </svg>
+      <figcaption>2-methoxy-2,3,3-trimethylbutane</figcaption>
+    </div>
+
+    <!-- E1 product -->
+    <div class="fig">
+      <svg viewBox="0 0 380 230" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue',Arial,sans-serif" font-size="19">
+        <style>
+          .atom{fill:#101a2c}
+          .bond{stroke:#101a2c;stroke-width:2;fill:none;stroke-linecap:round}
+          .dbond{stroke:#101a2c;stroke-width:2;fill:none}
+          .label{fill:#445064;font-size:13px;font-style:italic}
+        </style>
+        <text class="label" x="190" y="22" text-anchor="middle">E1 product</text>
+        <text class="atom" x="60" y="127" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">2</tspan></text>
+        <line class="dbond" x1="78" y1="120" x2="118" y2="120"/>
+        <line class="dbond" x1="78" y1="128" x2="118" y2="128"/>
+        <text class="atom" x="138" y="127" text-anchor="middle">C</text>
+        <line class="bond" x1="134" y1="140" x2="114" y2="180"/>
+        <text class="atom" x="92" y="196" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+        <line class="bond" x1="156" y1="120" x2="240" y2="120"/>
+        <text class="atom" x="258" y="127" text-anchor="middle">C</text>
+        <line class="bond" x1="264" y1="108" x2="294" y2="76"/>
+        <text class="atom" x="316" y="72" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+        <line class="bond" x1="276" y1="120" x2="314" y2="120"/>
+        <text class="atom" x="338" y="127" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+        <line class="bond" x1="264" y1="132" x2="294" y2="170"/>
+        <text class="atom" x="318" y="186" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="12">3</tspan></text>
+      </svg>
+      <figcaption>2,3,3-trimethyl-1-butene</figcaption>
+    </div>
+  </div>
+
+  <div class="callout tip">
+    Because C3 is quaternary, the usual Zaitsev preference for the more-substituted alkene is silent here &mdash; the only possible E1 alkene is the terminal one. In a typical SN1/E1 mixture in methanol at room temperature, the <b>SN1 ether</b> is the major product, with the alkene as a minor product. Heating shifts the balance toward elimination.
+  </div>
+</section>
+
+<!-- ============================ PART B =========================== -->
+<section>
+  <h2>(b) Role of Methanol in Each Reaction</h2>
+
+  <p>Methanol plays <b>three</b> distinct roles overall, and which role is on display differs between the two pathways.</p>
+
+  <table>
+    <thead>
+      <tr><th style="width:24%">Role</th><th>SN1</th><th>E1</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>Solvent</b><br><span style="color:var(--muted);font-size:.88rem">(both reactions)</span></td>
+        <td colspan="2">Polar protic. Solvates and stabilizes the developing Br<sup>&minus;</sup> and the carbocation in the rate-determining ionization step. This is what makes the slow step possible &mdash; without a polar protic solvent, the C&ndash;Br bond would not ionize. <em>This role is identical in SN1 and E1.</em></td>
+      </tr>
+      <tr>
+        <td><b>Nucleophile</b></td>
+        <td>Yes &mdash; an oxygen lone pair attacks the planar carbocation, forming the new C&ndash;O bond of the methyl ether.</td>
+        <td>No.</td>
+      </tr>
+      <tr>
+        <td><b>Base</b></td>
+        <td>Yes, but only in the final proton transfer: a second CH<sub>3</sub>OH plucks H<sup>+</sup> off the oxonium to release the neutral ether.</td>
+        <td>Yes &mdash; a methanol oxygen lone pair removes a &beta;-proton from the carbocation, generating the C=C bond.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="callout key">
+    <ul style="margin:6px 0">
+      <li>In <b>SN1</b>, methanol is mainly the <b>nucleophile</b> (and the solvent).</li>
+      <li>In <b>E1</b>, methanol is mainly the <b>base</b> (and the solvent).</li>
+      <li>In <b>both</b>, methanol is the <b>polar-protic solvent</b> that stabilizes the carbocation and the leaving bromide &mdash; this shared role is why a single ionization step feeds both products.</li>
+    </ul>
+  </div>
+</section>
+
+<footer style="text-align:center;color:var(--muted);padding:20px 10px 40px;font-size:.9rem">
+  Mechanism page for Wade Problem 7-17 &middot; built for the Chapter 7 study guide
+</footer>
+
+</div>
+</body>
+</html>
