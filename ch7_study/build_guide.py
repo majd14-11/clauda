@@ -757,6 +757,10 @@ def render_sections():
   </ul>
   <div class="callout warnbox">As you asked, <b>carbocation rearrangements are intentionally excluded.</b>
   Everything else from sections 7-1 to 7-18 is covered.</div>
+  <p style="margin-top:14px;padding:10px 14px;background:rgba(122,162,255,.08);border:1px solid rgba(122,162,255,.4);border-radius:10px">
+    <b>★ Worked problem:</b> <a href="problem_7-17.html">Problem 7-17 — Solvolysis of 2-bromo-2,3,3-trimethylbutane in methanol</a>
+    &nbsp;(both S<sub>N</sub>1 and E1 mechanisms drawn out step-by-step in a separate file)
+  </p>
 </section>""")
     for sid, title, short, body in SECTIONS:
         out.append(f'<section class="topic" id="{sid}">\n'
