@@ -1,0 +1,765 @@
+Research Analysis Plan
+Gastrointestinal Symptoms and Associated Factors Among University Students During Exam Periods
+SPSS Only
+Research Questions
+What is the prevalence and severity of gastrointestinal symptoms among university students during exam periods?
+What lifestyle and demographic factors are associated with GI symptom presence during exam periods?
+What lifestyle and demographic factors are associated with total GI symptom severity score?
+What factors predict self-reported worsening of GI symptoms during exam days compared to regular days?
+Study Outcomes
+Outcome
+Definition
+Measurement
+Regression type
+Outcome 1: GI symptom presence
+Whether the student experienced at least one GI symptom during exams
+Binary: Yes (any symptom present) / No (all symptoms = لا يوجد)
+Binary logistic regression
+Outcome 2: GI symptom severity score
+Total burden of all 13 GI symptoms combined
+Continuous: sum of severity ratings across 13 symptoms. Each symptom: لا يوجد=0 / خفيف=1 / متوسط=2 / شديد=3. Range: 0-39
+Multiple linear regression
+Outcome 3: Self-reported symptom increase
+Whether the student perceived worsening of GI symptoms during exam days vs. regular days
+Ordinal: لا أعلم=1 / لا، لا فرق=2 / أحيانا=3 / نعم بشكل واضح=4
+Ordinal logistic regression
+Phase 1: Data Cleaning and Preparation
+Apply all steps below before running any analysis. Work only on the 211 consenting responses.
+Step 1.3 — Recode college variable (الكلية)
+The college field contains free-text entries including school students (توجيهي, مدرسة, ثانوية عامة) who are not university students. Recode as follows:
+Original entries
+Action
+Recode to
+كلية الطب وعلوم الصحة
+Keep
+Medicine & Health Sciences
+كلية طب وجراحة الفم والاسنان
+Keep
+Dentistry
+كلية التمريض
+Keep
+Nursing
+كلية الصيدلة
+Keep
+Pharmacy
+كلية العلوم
+Keep
+Sciences
+كلية الهندسة وتكنولوجيا المعلومات / كلية الهندسة وتنكولوجيا المعلومات
+Merge both spellings
+Engineering & IT
+كلية العلوم الإنسانية والاجتماعية / الآدابوالتربية والاقتصاد
+Merge
+Humanities & Social Sciences
+كلية الفنون والاعلام
+Keep
+Arts & Media
+كلية القانون / علوم امنية / كليه المهن / Military medicine
+Merge into other
+Other
+توجيهي / مدرسة / ثانوية عامة / مدرسة توجيهي / طالبة ثانوية / ثانوي / مش بكلية / لسا توجيهي / هندسة زراعية / ...
+Exclude
+Step 1.4 — Recode chronic GI disease variable
+The chronic GI disease field has mixed free-text responses. Recode into a clean binary variable:
+Original entries
+Recode to
+New code
+لا
+No chronic GI disease
+0
+Lactose intolerance / IBS / قولون عصبي / التهاب في المعدة / Celiac disease+IBS / امساك / Crohn's disease / نعم. حمى البحر المتوسط
+Yes — has chronic GI disease
+1
+New variable: chronic_GI (0=No / 1=Yes). In SPSS: Transform -> Recode into Different Variables.
+Students with chronic GI disease (n=11) may naturally report more symptoms — consider running a sensitivity analysis excluding them, or including chronic_GI as a covariate in regression models.
+Step 1.5 — Recode GI symptom severity and compute scores
+Each of the 13 GI symptoms is rated on a 4-level scale. Recode to numeric, then compute Outcome 1 and Outcome 2:
+Original Arabic label
+Numeric code
+لا يوجد
+0
+خفيف
+1
+متوسط
+2
+شديد
+3
+In SPSS: Transform -> Recode into Different Variables for each of the 13 symptom variables.
+Compute Outcome 1 — GI symptom presence (binary)
+A student has GI symptom presence = Yes if at least one symptom is rated > 0.
+In SPSS: Transform -> Compute Variable:
+GI_presence = (S1_coded > 0) OR (S2_coded > 0) OR ... OR (S13_coded > 0)
+This gives 1 (Yes) if any symptom present, 0 (No) if all symptoms = لا يوجد.
+Compute Outcome 2 — Total GI severity score (0-39)
+In SPSS: Transform -> Compute Variable:
+GI_severity = SUM(S1_coded, S2_coded, S3_coded, S4_coded, S5_coded, S6_coded, S7_coded, S8_coded, S9_coded, S10_coded, S11_coded, S12_coded, S13_coded)
+Symptom variable
+Arabic label
+Coded variable name
+S1
+ألم بطني أو مغص
+S1_coded
+S2
+انتفاخ / شعور بالامتلاء
+S2_coded
+S3
+غازات مزعجة
+S3_coded
+S4
+إسهال
+S4_coded
+S5
+إمساك
+S5_coded
+S6
+قيء
+S6_coded
+S7
+غثيان
+S7_coded
+S8
+حرقة / حموضة في المعدة
+S8_coded
+S9
+فقدان شهية
+S9_coded
+S10
+صعوبة في البلع
+S10_coded
+S11
+نزيف شرجي أو دم في البراز
+S11_coded
+S12
+فقدان وزن
+S12_coded
+S13
+زيادة وزن
+S13_coded
+Step 1.6 — Recode Outcome 3 (self-reported symptom increase)
+Recode the 4-level ordinal response into numeric ranks:
+Original Arabic label
+Rank
+New variable: symptom_increase
+لا أعلم / لا ألاحظ
+1
+1
+لا، لا فرق
+2
+2
+أحيانًا
+3
+3
+نعم، بشكل واضح
+4
+4
+In SPSS: Transform -> Recode into Different Variables -> symptom_increase (1=لا أعلم to 4=نعم بشكل واضح).
+Step 1.7 — Score psychological stress (Section 4)
+Section 4 contains 12 items with 4 response options. Score using the GHQ Likert-style method:
+Response option
+Score
+أبداً
+0
+أقل من المعتاد
+1
+أكثر من المعتاد
+2
+كثيراً
+3
+In SPSS: Recode each of the 12 items, then: Transform -> Compute Variable:
+stress_score = SUM(item1_scored, item2_scored, ... item12_scored)
+Range: 0-36. Higher = greater psychological stress.
+Then create binary stress classification based on median split:
+In SPSS: Transform -> Recode into Different Variables:
+stress_level: scores <= median = 0 (Low stress) / scores > median = 1 (High stress)
+Calculate the median of stress_score first: Analyze -> Descriptive Statistics -> Frequencies -> tick Median. Then use that value for the recode cutoff. Report the median value in your methods section.
+Step 1.8 — Recode ordinal demographic and lifestyle variables
+In SPSS: Transform -> Recode into Different Variables. Used as continuous covariates in regression:
+Variable
+Original categories
+Numeric rank
+New variable name
+Age (العمر)
+أقل من 20 / 20-24 / 25-29 / 30+
+1 / 2 / 3 / 4
+age_rank
+Academic year (السنة الدراسية)
+أولى / ثانية / ثالثة / رابعة / خامسة فأكثر
+1 / 2 / 3 / 4 / 5
+year_rank
+Sleep hours (ساعات النوم)
+أقل من 5 / 5-6 / 6-7 / أكثر من 7
+1 / 2 / 3 / 4
+sleep_rank
+Caffeine cups (الكافيين)
+0 / 1-2 / 3-4 / أكثر من 4
+1 / 2 / 3 / 4
+caffeine_rank
+Eating habits change (تغيير الأكل)
+تغيرت إلى الأفضل / لم تتغير / تغيرت إلى أسوأ
+1 / 2 / 3
+eating_rank
+Symptom frequency (تكرار الأعراض)
+لم تحدث / 1-2 مرات / 3-4 مرات / 5+ مرات
+1 / 2 / 3 / 4
+freq_rank
+Impact on study (التأثير على الدراسة)
+لا تأثير / بسيط / متوسط / كبير
+1 / 2 / 3 / 4
+impact_rank
+Phase 2: Normality Check
+Check normality only for continuous outcome variables that will be used in parametric tests or linear regression.
+Variable
+Check normality?
+Why
+GI_severity (0-39)
+YES
+Continuous outcome — used in Phase 4 bivariate tests and linear regression. Normality determines whether to use parametric or non-parametric tests.
+stress_score (0-36)
+YES
+Continuous predictor used in correlations and bivariate tests.
+GI_presence (binary 0/1)
+NO
+Binary variable — normality does not apply. Always use chi-square or binary logistic regression.
+symptom_increase (ordinal 1-4)
+NO
+Ordinal variable — always use non-parametric tests and ordinal logistic regression.
+Demographic variables
+NO
+Categorical predictors — not outcomes being compared.
+In SPSS: Analyze -> Descriptive Statistics -> Explore -> move GI_severity and stress_score into Dependent List -> Plots -> tick Normality plots with tests -> OK
+Shapiro-Wilk result
+Decision
+Tests to use for GI_severity
+p > 0.05
+Normal -> use PARAMETRIC
+Independent t-test / One-way ANOVA / Pearson r
+p < 0.05
+Not normal -> use NON-PARAMETRIC
+Mann-Whitney U / Kruskal-Wallis H / Spearman rs
+Phase 3: Descriptive Statistics
+In SPSS: Analyze -> Descriptive Statistics -> Frequencies (for categorical) or Descriptives (for continuous). Report n and % for categorical, mean +/- SD for continuous.
+Table: Demographic characteristics of the sample
+Variable
+Categories
+Report
+Age (العمر)
+4 groups: <20 / 20-24 / 25-29 / 30+
+n, %
+Gender (الجنس)
+Male / Female
+n, %
+College (الكلية)
+Standardized categories after recode
+n, %
+Academic year (السنة الدراسية)
+1st through 5th+
+n, %
+Chronic GI disease (مرض هضمي مزمن)
+Yes / No
+n, %
+Table: Gastrointestinal symptoms during exam periods — severity of each symptom
+Symptom
+لا يوجد n (%)
+خفيف n (%)
+متوسط n (%)
+شديد n (%)
+ألم بطني أو مغص
+—
+—
+—
+—
+انتفاخ / شعور بالامتلاء
+—
+—
+—
+—
+غازات مزعجة
+—
+—
+—
+—
+إسهال
+—
+—
+—
+—
+إمساك
+—
+—
+—
+—
+قيء
+—
+—
+—
+—
+غثيان
+—
+—
+—
+—
+حرقة / حموضة في المعدة
+—
+—
+—
+—
+فقدان شهية
+—
+—
+—
+—
+صعوبة في البلع
+—
+—
+—
+—
+نزيف شرجي أو دم في البراز
+—
+—
+—
+—
+فقدان وزن
+—
+—
+—
+—
+زيادة وزن
+—
+—
+—
+—
+GI symptom presence — any symptom (Outcome 1)
+n (%) with No
+—
+—
+n (%) with Yes
+Total severity score (Outcome 2) — Mean +/- SD, range
+—
+—
+—
+—
+Table: Symptom characteristics — frequency, impact, healthcare visits, medication use
+Variable
+Categories
+Report
+Symptom frequency during last week (تكرار الأعراض)
+لم تحدث / 1-2 / 3-4 / 5+ مرات
+n, %
+Impact on daily activity or study (التأثير على الدراسة)
+لا تأثير / بسيط / متوسط / كبير
+n, %
+Healthcare visit (زيارة طبيب)
+Yes / No
+n, %
+Medication or home remedy use (تناول أدوية)
+Yes / No (+ type if yes)
+n, %
+Table: Lifestyle factors during exams and self-reported symptom comparison
+Variable
+Categories
+Report
+Self-reported symptom increase vs regular days (Outcome 3)
+لا أعلم / لا فرق / أحيانا / نعم بشكل واضح
+n, %
+Sleep hours per night during exams (ساعات النوم)
+Less than 5 / 5-6 / 6-7 / More than 7 hours
+n, %
+Daily caffeine intake (الكافيين)
+0 / 1-2 / 3-4 / More than 4 cups/cans
+n, %
+Change in eating habits (تغيير عادات الأكل)
+Changed for worse / No change / Changed for better
+n, %
+Table: Psychological stress — distribution of Section 4 responses
+Item
+أبداً n (%)
+أقل من المعتاد n (%)
+أكثر من المعتاد n (%)
+كثيراً n (%)
+هل واجهت صعوبة في التركيز؟
+—
+—
+—
+—
+هل فقدت النوم بسبب القلق؟
+—
+—
+—
+—
+هل شعرت أنك لا تقوم بدور مفيد؟
+—
+—
+—
+—
+هل واجهت صعوبة في اتخاذ القرارات؟
+—
+—
+—
+—
+هل شعرت أنك تحت ضغط مستمر؟
+—
+—
+—
+—
+هل واجهت صعوبة في التغلب على المشاكل؟
+—
+—
+—
+—
+هل واجهت صعوبة في الاستمتاع بالأنشطة اليومية؟
+—
+—
+—
+—
+هل شعرت أنك غير قادر على مواجهة المشاكل؟
+—
+—
+—
+—
+هل شعرت بالحزن أو الاكتئاب؟
+—
+—
+—
+—
+هل شعرت أنك فقدت الثقة بنفسك؟
+—
+—
+—
+—
+هل شعرت أنك بلا قيمة؟
+—
+—
+—
+—
+هل شعرت أنك غير سعيد عمومًا؟
+—
+—
+—
+—
+Total stress score (0-12) — Mean +/- SD
+—
+—
+—
+—
+Stress level — High / Low (median split)
+—
+n (%)
+—
+—
+Phase 4: Bivariate Associations
+Two tables — one for demographic predictors, one for lifestyle + stress predictors. Each table has 3 outcome columns. The correct test depends on the outcome type and normality result from Phase 2.
+Outcome
+Type
+Test with categorical predictor (2 groups)
+Test with categorical predictor (3+ groups)
+Test with continuous/ordinal predictor
+GI_presence (binary)
+Nominal — 2 groups
+Chi-square
+Chi-square
+Mann-Whitney U (split by presence Yes/No)
+GI_severity (continuous)
+Continuous
+t-test OR Mann-Whitney U (normality-dependent)
+ANOVA OR Kruskal-Wallis H (normality-dependent)
+Pearson r OR Spearman rs (normality-dependent)
+symptom_increase (ordinal 1-4)
+Ordinal
+Mann-Whitney U (always)
+Kruskal-Wallis H (always)
+Spearman rs (always)
+Table: Association between demographic variables and GI outcomes (3 outcome columns)
+Demographic variable
+Type
+Test for GI_presence
+Test for GI_severity
+Test for symptom_increase
+SPSS path
+Gender
+Nominal — 2 groups
+Chi-square
+t-test or Mann-Whitney U
+Mann-Whitney U
+Analyze -> Descriptive Stats -> Crosstabs (chi-sq) / Compare Means / Nonparametric Legacy -> 2 Independent Samples
+Age group
+Ordinal — 4 groups
+Chi-square
+ANOVA or Kruskal-Wallis H
+Kruskal-Wallis H
+Crosstabs / One-Way ANOVA / Nonparametric Legacy -> K Independent Samples
+College
+Nominal — multiple groups
+Chi-square
+ANOVA or Kruskal-Wallis H
+Kruskal-Wallis H
+Same as above
+Academic year
+Ordinal — 5 levels
+Chi-square
+ANOVA or Kruskal-Wallis H + Spearman rs
+Kruskal-Wallis H + Spearman rs
+ANOVA / K Independent Samples + Correlate -> Bivariate
+Chronic GI disease
+Nominal — 2 groups (Yes/No)
+Chi-square
+t-test or Mann-Whitney U
+Mann-Whitney U
+Crosstabs / 2 Independent Samples
+Decision rule for all tests: p < 0.05 = statistically significant association. Report test statistic (chi-square value / t / F / H / U / rs) and p-value for each cell.
+Table: Association between lifestyle factors, psychological stress, and GI outcomes (3 outcome columns)
+Predictor variable
+Type
+Test for GI_presence
+Test for GI_severity
+Test for symptom_increase
+SPSS path
+Sleep hours
+Ordinal — 4 levels
+Chi-square
+ANOVA or Kruskal-Wallis H + Spearman rs
+Kruskal-Wallis H + Spearman rs
+Crosstabs / ANOVA or K Independent / Correlate -> Bivariate
+Caffeine intake
+Ordinal — 4 levels
+Chi-square
+ANOVA or Kruskal-Wallis H + Spearman rs
+Kruskal-Wallis H + Spearman rs
+Same as above
+Eating habit change
+Ordinal — 3 levels
+Chi-square
+ANOVA or Kruskal-Wallis H
+Kruskal-Wallis H
+Same as above
+Psychological stress level (High/Low)
+Nominal — 2 groups
+Chi-square
+t-test or Mann-Whitney U
+Mann-Whitney U
+Crosstabs / 2 Independent Samples
+Stress score (continuous)
+Continuous
+Mann-Whitney U (compare scores between Yes/No)
+Pearson r or Spearman rs
+Spearman rs
+2 Independent Samples / Correlate -> Bivariate
+Phase 5: Regression Analyses
+Three regression models — one per outcome. All predictors enter simultaneously (Enter method). SPSS only.
+Model
+Outcome
+Regression type
+SPSS path
+Model 1
+GI_presence (binary 0/1)
+Binary logistic regression
+Analyze -> Regression -> Binary Logistic
+Model 2
+GI_severity (continuous 0-39)
+Multiple linear regression
+Analyze -> Regression -> Linear
+Model 3
+symptom_increase (ordinal 1-4)
+Ordinal logistic regression
+Analyze -> Regression -> Ordinal
+Model 1 — Binary logistic regression: predictors of GI symptom presence
+Dependent variable: GI_presence (0=No symptoms, 1=Any symptom present). SPSS: Analyze -> Regression -> Binary Logistic.
+Check assumptions: (1) No multicollinearity — in Options tick CI for exp(B) and check correlation matrix. (2) Adequate sample size — minimum 10 events per predictor variable. With n=211 and assuming ~70% symptom presence, you have ~147 cases with symptoms — sufficient for up to 14 predictors.
+Table: Binary logistic regression — predictors of GI symptom presence
+Predictor group
+Variable
+Type
+Enter in SPSS as
+Variable name
+Demographics
+Gender
+Nominal — 2 groups
+Categorical (ref = Female)
+gender
+Demographics
+Age rank
+Ordinal (1-4)
+Covariate
+age_rank
+Demographics
+Academic year rank
+Ordinal (1-5)
+Covariate
+year_rank
+Demographics
+College
+Nominal — multiple groups
+Categorical (ref = largest group)
+college_clean
+Demographics
+Chronic GI disease
+Nominal — Yes/No
+Categorical (ref = No)
+chronic_GI
+Lifestyle
+Sleep rank
+Ordinal (1-4)
+Covariate
+sleep_rank
+Lifestyle
+Caffeine rank
+Ordinal (1-4)
+Covariate
+caffeine_rank
+Lifestyle
+Eating habits rank
+Ordinal (1-3)
+Covariate
+eating_rank
+Stress
+Stress score
+Continuous (0-12)
+Covariate
+stress_score
+Report: Odds Ratio (OR = Exp(B)), 95% CI, p-value for each predictor. Report Nagelkerke R-squared and overall model chi-square significance.
+Model 2 — Multiple linear regression: predictors of GI symptom severity score
+Dependent variable: GI_severity (0-39, continuous). SPSS: Analyze -> Regression -> Linear (Enter method).
+Check assumptions before running: (1) Normality of residuals: Plots -> tick Normal P-P plot. (2) Multicollinearity: Statistics -> tick Collinearity diagnostics -> VIF < 10. (3) Homoscedasticity: Plots -> *ZRESID vs *ZPRED scatterplot.
+Table: Multiple linear regression — predictors of total GI symptom severity score
+Predictor group
+Variable
+Type
+Enter in SPSS as
+Variable name
+Demographics
+Gender
+Nominal — 2 groups
+Dummy: Male=1 / Female=0 (ref)
+gender_dummy
+Demographics
+Age rank
+Ordinal (1-4)
+Continuous covariate
+age_rank
+Demographics
+Academic year rank
+Ordinal (1-5)
+Continuous covariate
+year_rank
+Demographics
+College
+Nominal — multiple groups
+Create dummy variables (ref = largest group)
+college dummies
+Demographics
+Chronic GI disease
+Nominal — Yes/No
+Dummy: Yes=1 / No=0 (ref)
+chronic_GI
+Lifestyle
+Sleep rank
+Ordinal (1-4)
+Continuous covariate
+sleep_rank
+Lifestyle
+Caffeine rank
+Ordinal (1-4)
+Continuous covariate
+caffeine_rank
+Lifestyle
+Eating habits rank
+Ordinal (1-3)
+Continuous covariate
+eating_rank
+Stress
+Stress score
+Continuous (0-12)
+Continuous covariate
+stress_score
+Report: B (unstandardized), Beta (standardized), t-statistic, p-value, 95% CI for B. Report R-squared, Adjusted R-squared, F-statistic and p-value for overall model.
+Model 3 — Ordinal logistic regression: predictors of self-reported symptom increase
+Dependent variable: symptom_increase (1=لا أعلم to 4=نعم بشكل واضح, ordinal). SPSS: Analyze -> Regression -> Ordinal.
+In SPSS Ordinal Regression: Output tab -> tick Test of Parallel Lines. If p < 0.05, the proportional odds assumption is violated — report this as a limitation.
+Table: Ordinal logistic regression — predictors of self-reported GI symptom increase during exams
+Predictor group
+Variable
+Type
+Enter in SPSS as
+Variable name
+Demographics
+Gender
+Nominal — 2 groups
+Factor (ref = Female)
+gender
+Demographics
+Age rank
+Ordinal (1-4)
+Covariate
+age_rank
+Demographics
+Academic year rank
+Ordinal (1-5)
+Covariate
+year_rank
+Demographics
+College
+Nominal — multiple groups
+Factor (ref = largest group)
+college_clean
+Demographics
+Chronic GI disease
+Nominal — Yes/No
+Factor (ref = No)
+chronic_GI
+Lifestyle
+Sleep rank
+Ordinal (1-4)
+Covariate
+sleep_rank
+Lifestyle
+Caffeine rank
+Ordinal (1-4)
+Covariate
+caffeine_rank
+Lifestyle
+Eating habits rank
+Ordinal (1-3)
+Covariate
+eating_rank
+Stress
+Stress score
+Continuous (0-12)
+Covariate
+stress_score
+Report: Odds Ratio (OR = Exp(B)), 95% CI, p-value for each predictor. Report Nagelkerke R-squared and overall model chi-square significance.
+Summary: All Tables, Tests, and SPSS Paths
+Table
+Test
+SPSS path
+Demographic characteristics
+Descriptive: n, %
+Analyze -> Descriptive Statistics -> Frequencies
+GI symptom severity per symptom
+Descriptive: n, % per severity level
+Analyze -> Descriptive Statistics -> Frequencies
+Symptom characteristics (frequency, impact, visits, meds)
+Descriptive: n, %
+Analyze -> Descriptive Statistics -> Frequencies
+Lifestyle factors + Outcome 3 descriptive
+Descriptive: n, %
+Analyze -> Descriptive Statistics -> Frequencies
+Psychological stress Section 4 items
+Descriptive: n, % per response + mean stress score
+Analyze -> Descriptive Statistics -> Frequencies / Descriptives
+Normality check (GI_severity + stress_score)
+Shapiro-Wilk
+Analyze -> Descriptive Statistics -> Explore -> Normality plots with tests
+Demographics x 3 outcomes (bivariate)
+Chi-square / t-test or Mann-Whitney / ANOVA or Kruskal-Wallis / Spearman (normality-dependent)
+Crosstabs / Compare Means / Nonparametric Legacy / Correlate -> Bivariate
+Lifestyle + stress x 3 outcomes (bivariate)
+Same tests — normality-dependent
+Same SPSS paths
+Model 1: All predictors -> GI presence
+Binary logistic regression
+Analyze -> Regression -> Binary Logistic
+Model 2: All predictors -> GI severity score
+Multiple linear regression
+Analyze -> Regression -> Linear
+Model 3: All predictors -> symptom increase
+Ordinal logistic regression
+Analyze -> Regression -> Ordinal

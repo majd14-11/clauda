@@ -1,0 +1,371 @@
+﻿id,age_rank,gender_male,college_clean,college_grp,year_rank,chronic_GI,S1_AbdPain_colic,S2_Bloating,S3_Gas,S4_Diarrhea,S5_Constipation,S6_Vomiting,S7_Nausea,S8_Heartburn,S9_Appetite_loss,S10_Dysphagia,S11_Rectal_bleed,S12_Weight_loss,S13_Weight_gain,GI_presence,GI_severity,freq_rank,impact_rank,visit,med,symptom_increase,sleep_rank,caffeine_rank,eating_rank,ghq_n_items,stress_score,stress_level
+1,1,0,Engineering & IT,Engineering&IT,1,0,0,0,0,0,0,0,0,1,1,1,0,1,0,1,4,1,2,0,0,3,3,3,2,12,25.0,1
+2,1,1,Medicine & Health Sciences,Medicine&Health,1,0,1,1,1,0,1,0,0,0,1,0,0,1,0,1,6,3,3,0,1,4,2,1,3,12,14.0,0
+3,1,1,Medicine & Health Sciences,Medicine&Health,1,0,3,0,0,0,0,3,3,3,2,2,0,0,0,1,16,4,3,1,,4,2,1,2,12,12.0,0
+4,1,1,Medicine & Health Sciences,Medicine&Health,1,0,2,0,3,1,0,0,1,1,0,0,2,3,0,1,13,2,2,0,0,3,2,2,2,12,11.0,0
+5,1,1,Engineering & IT,Engineering&IT,1,0,2,0,2,0,0,0,0,2,0,0,0,0,3,1,9,2,2,0,0,4,1,3,3,12,34.0,1
+6,1,1,Engineering & IT,Engineering&IT,1,0,0,0,2,0,0,0,0,0,0,0,0,0,0,1,2,1,1,0,0,3,1,1,2,12,1.0,0
+7,1,1,Engineering & IT,Engineering&IT,1,0,2,2,2,2,2,2,2,2,2,2,2,2,2,1,26,2,2,0,0,3,2,2,1,5,,
+8,1,1,Engineering & IT,Engineering&IT,1,0,0,1,2,0,1,0,0,0,0,0,0,0,0,1,4,1,1,0,0,2,2,2,2,12,8.0,0
+9,1,1,Engineering & IT,Engineering&IT,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,1,1,0,0,2,3,3,3,12,18.0,0
+10,1,1,Engineering & IT,Engineering&IT,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,2,1,1,3,4,,
+11,1,1,Engineering & IT,Engineering&IT,1,0,1,0,1,1,0,0,1,0,0,0,0,2,0,1,6,2,3,0,0,4,1,2,3,11,16.36,0
+12,1,1,Engineering & IT,Engineering&IT,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,2,1,1,3,4,,
+13,1,1,Medicine & Health Sciences,Medicine&Health,1,0,0,0,0,0,0,0,0,0,3,0,0,2,0,1,5,1,4,0,0,4,1,3,3,12,36.0,1
+14,1,1,Engineering & IT,Engineering&IT,1,0,0,0,0,0,0,0,0,0,3,0,0,2,0,1,5,1,1,0,0,3,2,2,3,12,19.0,0
+15,1,1,Medicine & Health Sciences,Medicine&Health,1,0,2,1,1,2,0,3,3,3,2,0,0,0,1,1,18,1,3,0,0,4,1,2,2,4,,
+16,1,1,Medicine & Health Sciences,Medicine&Health,1,0,1,0,0,0,0,0,1,0,1,0,0,1,0,1,4,2,2,0,0,1,2,2,2,5,,
+17,1,1,Medicine & Health Sciences,Medicine&Health,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,2,2,1,2,1,,
+18,1,1,Engineering & IT,Engineering&IT,1,0,1,0,2,0,0,0,0,2,2,1,0,0,0,1,8,1,2,0,0,3,2,1,2,10,21.6,1
+19,1,1,Humanities & Social Sciences,NonHealth,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,2,1,1,2,12,0.0,0
+20,1,1,Medicine & Health Sciences,Medicine&Health,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,4,2,2,12,0.0,0
+21,1,1,Engineering & IT,Engineering&IT,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,2,3,1,2,12,0.0,0
+22,1,1,Engineering & IT,Engineering&IT,1,0,1,0,0,1,1,0,1,2,2,0,0,0,1,1,9,3,3,0,0,3,1,2,3,12,23.0,1
+23,2,1,Medicine & Health Sciences,Medicine&Health,2,0,0,1,0,0,0,0,0,1,3,0,0,3,0,1,8,4,4,0,0,4,1,4,3,12,15.0,0
+24,1,1,Medicine & Health Sciences,Medicine&Health,1,0,1,1,2,3,3,0,0,0,1,0,0,1,0,1,12,1,2,0,0,3,4,1,3,12,15.0,0
+25,1,0,Medicine & Health Sciences,Medicine&Health,1,0,0,1,0,0,0,1,2,1,2,0,0,0,2,1,9,2,2,1,0,1,2,2,3,11,21.82,1
+26,1,1,Medicine & Health Sciences,Medicine&Health,1,0,0,1,2,3,2,0,1,2,3,2,0,1,2,1,19,1,1,0,0,4,1,1,3,4,,
+27,1,1,Engineering & IT,Engineering&IT,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,0,0,2,2,2,2,12,30.0,1
+28,1,0,Arts & Media,NonHealth,1,0,0,1,2,0,1,0,0,0,0,0,0,2,1,1,7,2,3,0,0,3,2,2,1,12,23.0,1
+29,1,0,Other,NonHealth,1,0,1,2,1,1,0,0,0,0,1,0,0,2,1,1,9,2,3,0,0,3,1,2,3,12,34.0,1
+30,1,0,Dentistry,OtherHealth,1,0,3,0,0,0,0,1,1,0,2,0,0,0,1,1,8,2,3,1,0,4,2,2,2,12,15.0,0
+31,1,0,Nursing,OtherHealth,1,0,1,1,1,0,0,0,0,1,0,0,0,0,1,1,5,1,2,0,0,1,1,3,3,12,26.0,1
+32,1,1,Humanities & Social Sciences,NonHealth,1,0,1,0,0,0,0,0,1,2,1,0,0,1,0,1,6,3,2,0,0,1,1,1,2,12,20.0,0
+33,1,1,Humanities & Social Sciences,NonHealth,1,0,1,0,0,0,0,0,0,1,1,0,0,1,0,1,4,2,2,1,0,3,1,4,3,12,12.0,0
+34,1,0,Arts & Media,NonHealth,1,0,3,1,0,0,0,0,1,2,3,3,0,2,0,1,15,3,3,0,0,3,1,2,3,12,27.0,1
+35,1,0,Medicine & Health Sciences,Medicine&Health,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,2,1,4,2,4,,
+36,1,0,Humanities & Social Sciences,NonHealth,1,0,2,0,1,0,0,3,3,2,2,0,0,3,0,1,16,2,4,1,0,3,1,1,3,12,32.0,1
+37,1,0,Medicine & Health Sciences,Medicine&Health,1,0,2,3,3,0,0,0,0,3,1,0,0,3,0,1,15,3,3,1,0,4,2,2,3,12,21.0,1
+38,1,0,Dentistry,OtherHealth,1,0,1,1,1,0,0,1,1,2,2,2,0,2,0,1,13,2,2,0,0,4,1,3,3,12,16.0,0
+39,1,1,Nursing,OtherHealth,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,4,2,2,11,0.0,0
+40,1,1,Engineering & IT,Engineering&IT,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,3,2,2,12,13.0,0
+41,1,0,Medicine & Health Sciences,Medicine&Health,1,0,3,2,3,0,0,1,2,2,3,1,0,0,3,1,20,2,3,0,1,4,1,3,2,12,27.0,1
+42,1,1,Engineering & IT,Engineering&IT,2,0,2,0,1,0,0,0,0,0,0,0,0,1,0,1,4,3,2,0,0,4,3,2,3,11,3.27,0
+43,2,0,Medicine & Health Sciences,Medicine&Health,1,0,1,2,2,1,1,0,0,0,2,3,0,2,0,1,14,2,2,0,0,3,1,1,2,5,,
+44,2,0,Humanities & Social Sciences,NonHealth,2,0,2,0,0,0,0,0,0,1,3,0,0,2,0,1,8,3,3,1,0,2,3,2,2,12,15.0,0
+45,1,1,Engineering & IT,Engineering&IT,1,0,0,0,0,0,0,0,0,1,0,0,0,0,2,1,3,1,1,0,0,1,1,2,1,5,,
+46,2,0,Arts & Media,NonHealth,2,0,1,1,2,0,3,0,0,1,0,0,0,0,1,1,9,2,2,0,0,3,2,2,3,12,35.0,1
+47,1,1,Engineering & IT,Engineering&IT,1,0,2,2,2,2,0,0,2,2,3,1,0,2,0,1,18,3,3,0,0,4,1,2,3,5,,
+48,1,1,Medicine & Health Sciences,Medicine&Health,1,0,0,1,0,0,0,0,1,1,2,0,0,2,0,1,7,2,2,0,0,4,2,2,2,4,,
+49,1,0,Dentistry,OtherHealth,4,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,13,2,4,0,0,2,4,3,2,12,36.0,1
+50,1,0,Dentistry,OtherHealth,1,0,1,0,1,1,0,0,0,1,0,0,0,0,2,1,6,2,2,0,0,1,2,2,2,12,16.0,0
+51,1,0,Pharmacy,OtherHealth,1,0,2,3,1,0,0,0,0,0,0,0,3,0,3,1,12,3,4,0,0,2,2,1,3,12,18.0,0
+52,1,1,Medicine & Health Sciences,Medicine&Health,2,0,1,2,3,0,3,0,1,2,0,0,0,0,2,1,14,1,2,0,0,3,2,1,3,12,25.0,1
+53,1,0,Medicine & Health Sciences,Medicine&Health,1,0,2,2,2,2,2,2,2,2,2,2,2,2,2,1,26,2,3,0,0,3,2,1,3,12,12.0,0
+54,1,0,Medicine & Health Sciences,Medicine&Health,1,0,3,1,0,1,1,0,3,2,3,2,0,0,0,1,16,4,2,0,0,4,1,3,3,5,,
+55,2,1,Medicine & Health Sciences,Medicine&Health,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,2,2,12,11.0,0
+56,2,1,Nursing,OtherHealth,2,0,1,0,1,0,0,0,1,0,2,0,2,1,0,1,8,2,1,0,0,3,2,3,2,12,24.0,1
+57,1,1,Engineering & IT,Engineering&IT,1,0,1,0,0,0,0,1,0,3,1,0,0,0,1,1,7,3,2,0,0,3,1,2,3,12,18.0,0
+58,1,0,Medicine & Health Sciences,Medicine&Health,1,0,0,1,0,0,0,3,3,3,3,1,3,3,3,1,23,4,2,0,0,3,4,2,1,12,21.0,1
+59,1,0,Medicine & Health Sciences,Medicine&Health,1,0,3,0,0,0,0,0,3,0,0,0,0,0,0,1,6,1,1,0,0,4,2,1,2,4,,
+60,1,1,Dentistry,OtherHealth,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,2,3,2,2,2,,
+61,1,0,Medicine & Health Sciences,Medicine&Health,1,0,1,0,0,0,0,0,0,0,2,0,0,0,0,1,3,1,1,0,0,2,2,1,2,12,19.0,0
+62,1,1,Humanities & Social Sciences,NonHealth,1,0,0,0,0,1,2,0,0,1,0,0,0,0,2,1,6,2,1,0,0,2,3,2,2,5,,
+63,1,1,Engineering & IT,Engineering&IT,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,2,3,1,2,12,7.0,0
+64,1,1,Medicine & Health Sciences,Medicine&Health,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,2,1,1,0,0,1,1,2,1,12,11.0,0
+65,1,0,Medicine & Health Sciences,Medicine&Health,1,0,0,2,2,2,3,2,0,3,0,0,0,0,2,1,16,3,3,0,0,1,1,1,2,11,34.91,1
+66,2,0,Medicine & Health Sciences,Medicine&Health,1,0,2,2,1,2,1,0,1,1,1,0,0,1,1,1,13,2,2,0,0,4,3,1,3,12,19.0,0
+67,1,0,Medicine & Health Sciences,Medicine&Health,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,4,2,2,12,2.0,0
+68,1,1,Engineering & IT,Engineering&IT,1,0,0,1,0,0,0,0,3,1,1,0,0,1,3,1,10,1,3,0,0,2,3,2,2,4,,
+69,1,1,Medicine & Health Sciences,Medicine&Health,1,0,2,2,2,1,0,1,2,2,0,1,0,0,2,1,15,2,2,0,0,4,1,3,3,12,22.0,1
+70,1,1,Engineering & IT,Engineering&IT,1,1,3,3,0,1,2,0,1,2,3,2,0,0,1,1,18,2,3,1,0,4,2,2,2,12,35.0,1
+71,1,0,Medicine & Health Sciences,Medicine&Health,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,2,1,2,0,0,3,3,2,2,5,,
+72,1,0,Humanities & Social Sciences,NonHealth,4,0,1,0,0,0,0,0,0,0,0,1,3,0,1,1,6,4,2,1,0,1,3,1,2,12,20.0,0
+73,1,0,Medicine & Health Sciences,Medicine&Health,1,0,1,1,0,1,1,0,0,0,1,0,0,0,0,1,5,1,1,0,0,1,2,1,2,12,21.0,1
+74,1,1,Medicine & Health Sciences,Medicine&Health,1,0,0,0,0,0,0,0,0,0,2,0,0,2,0,1,4,3,2,0,0,3,3,2,2,12,9.0,0
+75,1,0,Medicine & Health Sciences,Medicine&Health,1,0,2,0,0,2,2,0,1,1,3,0,0,2,2,1,15,3,2,0,0,3,3,2,3,12,7.0,0
+76,1,1,Medicine & Health Sciences,Medicine&Health,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,2,1,2,12,16.0,0
+77,1,0,Other,NonHealth,1,0,1,2,0,0,0,0,1,2,3,0,0,0,0,1,9,2,2,1,1,3,2,2,3,12,28.0,1
+78,1,0,Engineering & IT,Engineering&IT,1,0,3,3,3,2,2,2,3,2,2,2,1,0,2,1,27,2,4,1,0,4,1,3,3,5,,
+79,1,1,Medicine & Health Sciences,Medicine&Health,1,0,1,0,1,0,0,0,0,1,0,1,0,0,1,1,5,2,2,0,0,2,2,2,2,11,8.73,0
+80,1,0,Humanities & Social Sciences,NonHealth,1,0,3,1,3,0,0,0,0,1,0,0,0,0,1,1,9,4,3,0,0,3,1,2,3,4,,
+81,1,0,Engineering & IT,Engineering&IT,1,0,1,0,0,0,2,0,0,0,0,0,0,0,0,1,3,1,1,0,0,2,1,1,1,12,5.0,0
+82,1,0,Dentistry,OtherHealth,1,0,3,1,2,0,0,0,2,2,2,2,0,3,0,1,17,2,3,0,0,4,2,3,3,12,34.0,1
+83,1,0,Engineering & IT,Engineering&IT,1,0,3,3,2,2,0,1,2,1,2,2,2,2,2,1,24,3,4,0,0,4,1,2,3,12,30.0,1
+84,1,1,Medicine & Health Sciences,Medicine&Health,1,0,0,2,1,0,0,0,0,1,2,1,0,0,0,1,7,1,2,0,0,2,2,2,2,12,20.0,0
+85,2,1,Medicine & Health Sciences,Medicine&Health,2,0,1,0,0,0,0,0,0,0,1,0,0,2,0,1,4,2,2,0,0,4,2,3,2,12,15.0,0
+86,1,1,Medicine & Health Sciences,Medicine&Health,2,0,1,1,0,0,0,0,0,0,1,0,0,0,0,1,3,2,1,0,0,2,2,2,2,12,7.0,0
+87,1,0,Medicine & Health Sciences,Medicine&Health,1,0,3,2,1,1,1,0,2,0,0,0,0,0,2,1,12,2,3,1,0,4,2,1,3,12,31.0,1
+88,2,0,Pharmacy,OtherHealth,3,0,1,1,2,0,0,0,3,0,1,0,0,2,0,1,10,2,2,0,0,1,3,2,2,12,15.0,0
+89,1,0,Pharmacy,OtherHealth,2,0,2,0,1,0,2,0,2,0,0,0,0,0,0,1,7,2,2,1,0,1,2,2,2,12,9.0,0
+90,1,0,Humanities & Social Sciences,NonHealth,2,0,1,0,1,0,0,0,0,0,1,0,0,0,0,1,3,1,1,0,0,2,2,2,2,10,6.0,0
+91,1,0,Engineering & IT,Engineering&IT,1,0,1,2,1,0,0,0,0,1,1,0,0,0,2,1,8,1,2,0,0,1,3,2,3,12,33.0,1
+92,2,0,Medicine & Health Sciences,Medicine&Health,2,0,2,2,2,1,1,0,0,1,0,0,0,0,1,1,10,2,3,1,0,4,1,1,2,12,23.0,1
+93,2,1,Medicine & Health Sciences,Medicine&Health,1,0,0,1,3,1,0,0,1,1,0,0,3,3,0,1,13,2,1,0,0,2,2,2,2,12,11.0,0
+94,1,1,Medicine & Health Sciences,Medicine&Health,2,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,13,4,2,1,0,2,1,1,1,5,,
+95,1,0,Nursing,OtherHealth,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,2,2,1,0,0,2,1,2,2,12,11.0,0
+96,1,0,Nursing,OtherHealth,1,0,2,1,1,1,1,1,2,1,3,3,0,3,3,1,22,3,4,0,0,4,1,3,3,12,36.0,1
+97,2,0,Nursing,OtherHealth,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,2,2,4,2,5,,
+98,1,0,Nursing,OtherHealth,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,2,2,2,12,16.0,0
+99,1,0,Sciences,OtherHealth,1,0,2,1,0,1,0,1,1,1,2,0,0,2,0,1,11,1,2,0,0,3,1,2,3,12,21.0,1
+100,1,0,Medicine & Health Sciences,Medicine&Health,1,0,1,0,1,3,0,0,0,2,0,0,0,0,0,1,7,2,3,1,0,3,3,2,2,12,15.0,0
+101,1,0,Humanities & Social Sciences,NonHealth,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,1,1,0,0,3,2,1,2,12,3.0,0
+102,1,0,Other,NonHealth,1,0,2,0,0,1,0,0,1,1,1,0,0,0,0,1,6,1,2,0,0,3,2,2,3,5,,
+103,2,0,Medicine & Health Sciences,Medicine&Health,4,1,3,3,3,1,3,0,2,2,1,0,1,0,3,1,22,3,4,1,0,4,2,2,3,12,34.0,1
+104,2,1,Medicine & Health Sciences,Medicine&Health,4,0,1,2,2,0,0,0,0,1,1,0,0,0,0,1,7,2,2,0,0,3,1,2,3,4,,
+105,2,0,Medicine & Health Sciences,Medicine&Health,4,0,3,3,3,0,0,0,3,3,3,3,0,0,0,1,21,2,3,0,0,4,2,3,3,12,34.0,1
+106,2,0,Medicine & Health Sciences,Medicine&Health,4,0,2,3,3,0,0,0,2,2,0,0,0,0,0,1,12,4,3,0,0,4,2,2,2,12,4.0,0
+107,2,0,Medicine & Health Sciences,Medicine&Health,4,0,1,1,1,1,1,0,2,1,2,0,0,1,1,1,12,2,2,0,0,4,1,3,2,12,26.0,1
+108,1,1,Medicine & Health Sciences,Medicine&Health,1,0,2,2,2,0,0,0,1,1,2,0,0,2,1,1,13,2,3,0,0,3,1,4,3,12,29.0,1
+109,1,1,Medicine & Health Sciences,Medicine&Health,2,0,1,2,2,1,1,2,1,1,2,1,2,2,2,1,20,1,1,0,0,1,1,1,2,12,0.0,0
+110,1,0,Medicine & Health Sciences,Medicine&Health,2,0,2,3,3,1,1,2,2,2,2,2,0,2,0,1,22,3,3,0,0,4,1,2,2,12,15.0,0
+111,1,1,Medicine & Health Sciences,Medicine&Health,2,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,2,1,1,0,0,1,3,2,2,4,,
+112,1,0,Medicine & Health Sciences,Medicine&Health,2,0,3,3,3,2,3,1,1,3,2,1,0,2,1,1,25,3,4,0,0,4,1,3,3,12,24.0,1
+113,2,0,Medicine & Health Sciences,Medicine&Health,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,2,1,2,3,4,,
+114,1,0,Medicine & Health Sciences,Medicine&Health,2,0,2,1,0,0,0,0,0,2,1,0,0,0,1,1,7,2,2,0,0,4,1,4,3,12,30.0,1
+115,1,0,Medicine & Health Sciences,Medicine&Health,2,0,1,3,2,1,1,0,0,0,0,0,0,1,0,1,9,2,2,0,0,4,2,2,2,12,27.0,1
+116,2,0,Medicine & Health Sciences,Medicine&Health,2,0,0,0,0,0,0,0,0,0,2,0,0,2,0,1,4,1,1,0,0,2,3,3,3,12,22.0,1
+117,2,0,Arts & Media,NonHealth,3,0,0,0,0,0,0,0,0,0,2,0,0,0,0,1,2,3,2,0,0,2,1,1,3,12,13.0,0
+118,2,0,Humanities & Social Sciences,NonHealth,3,1,2,1,1,2,2,1,3,1,1,2,0,1,0,1,17,2,3,1,0,4,1,2,3,12,17.0,0
+119,2,1,Humanities & Social Sciences,NonHealth,3,0,0,0,0,0,0,0,0,2,0,0,0,0,0,1,2,3,2,0,0,2,3,2,2,5,,
+120,2,0,Humanities & Social Sciences,NonHealth,3,0,2,2,0,0,0,0,1,2,2,2,0,0,0,1,11,2,2,0,0,4,1,3,3,5,,
+121,3,0,Medicine & Health Sciences,Medicine&Health,5,1,3,3,3,1,3,1,2,2,1,0,0,0,2,1,21,3,3,1,1,3,1,2,3,12,22.0,1
+122,2,0,Humanities & Social Sciences,NonHealth,3,0,1,1,0,0,0,0,1,0,2,0,0,2,0,1,7,2,2,0,0,3,1,2,3,11,19.64,0
+123,2,1,Medicine & Health Sciences,Medicine&Health,5,0,2,2,2,3,1,2,2,2,0,0,0,2,0,1,18,1,3,0,0,4,1,2,3,12,16.0,0
+124,1,1,Dentistry,OtherHealth,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,2,2,2,2,12,3.0,0
+125,2,1,Medicine & Health Sciences,Medicine&Health,5,1,2,2,2,2,1,1,3,2,3,0,0,0,0,1,18,3,2,0,1,4,3,2,3,12,15.0,0
+126,2,1,Medicine & Health Sciences,Medicine&Health,5,0,0,0,1,0,0,0,0,2,0,0,0,0,0,1,3,1,2,0,0,3,3,2,3,4,,
+127,2,0,Other,NonHealth,3,0,1,1,1,0,0,0,2,0,0,0,0,0,1,1,6,4,2,0,0,4,1,2,3,12,25.0,1
+128,2,0,Sciences,OtherHealth,4,0,2,0,0,1,0,2,2,1,0,0,0,0,3,1,11,2,2,0,0,4,2,4,3,12,25.0,1
+129,2,0,Medicine & Health Sciences,Medicine&Health,5,0,1,1,2,2,2,0,0,0,0,0,0,0,0,1,8,2,3,0,0,3,4,2,3,11,17.45,0
+130,1,0,Medicine & Health Sciences,Medicine&Health,1,0,1,3,2,0,2,0,1,0,0,2,0,0,2,1,13,3,3,0,0,3,3,3,3,12,25.0,1
+131,1,0,Medicine & Health Sciences,Medicine&Health,1,0,2,2,3,0,0,0,1,0,2,3,0,0,0,1,13,2,2,0,0,4,1,3,3,5,,
+132,1,0,Engineering & IT,Engineering&IT,1,0,3,2,2,0,0,0,3,2,0,0,0,0,3,1,15,2,3,1,0,4,2,3,3,5,,
+133,2,0,Nursing,OtherHealth,4,1,2,2,2,2,2,0,0,1,0,0,1,0,3,1,15,3,2,0,1,3,1,1,3,12,22.0,1
+134,2,0,Medicine & Health Sciences,Medicine&Health,5,0,1,2,2,0,0,0,2,2,3,0,0,1,0,1,13,3,2,0,0,4,1,1,3,12,24.0,1
+135,2,0,Medicine & Health Sciences,Medicine&Health,5,0,2,1,0,1,2,0,2,3,3,2,0,1,0,1,17,4,3,0,0,3,2,3,3,12,19.0,0
+136,2,0,Medicine & Health Sciences,Medicine&Health,4,0,0,0,1,1,1,0,0,0,1,1,0,0,1,1,6,3,1,0,0,3,2,2,3,12,32.0,1
+137,3,1,Medicine & Health Sciences,Medicine&Health,4,0,2,1,1,0,1,0,0,2,1,0,0,0,0,1,8,3,2,0,0,3,2,3,3,12,13.0,0
+138,2,0,Medicine & Health Sciences,Medicine&Health,3,0,2,2,2,1,1,0,2,2,1,0,0,0,0,1,13,3,3,0,0,4,2,2,2,12,28.0,1
+139,1,0,Medicine & Health Sciences,Medicine&Health,2,0,2,1,1,1,0,0,0,0,2,0,0,2,0,1,9,3,4,0,0,4,1,2,3,12,25.0,1
+140,2,1,Medicine & Health Sciences,Medicine&Health,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,2,1,3,3,12,4.0,0
+141,1,1,Medicine & Health Sciences,Medicine&Health,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,2,2,2,2,12,0.0,0
+142,2,0,Medicine & Health Sciences,Medicine&Health,5,0,0,1,0,0,1,0,0,1,1,0,0,0,0,1,4,1,1,0,0,1,2,2,2,11,5.45,0
+143,1,0,Engineering & IT,Engineering&IT,1,0,0,0,0,0,0,0,0,0,3,0,0,0,0,1,3,1,1,0,0,2,2,2,3,12,35.0,1
+144,1,1,Engineering & IT,Engineering&IT,2,1,2,3,1,1,1,1,2,2,3,2,0,1,0,1,19,2,3,0,1,4,1,3,3,4,,
+145,1,1,Engineering & IT,Engineering&IT,1,0,2,1,1,0,0,0,1,3,0,0,0,1,0,1,9,2,2,1,1,3,1,3,2,12,17.0,0
+146,1,0,Engineering & IT,Engineering&IT,1,0,1,2,1,0,1,0,0,0,1,0,0,0,0,1,6,1,2,0,0,3,3,1,2,12,16.0,0
+147,1,1,Engineering & IT,Engineering&IT,1,0,2,1,2,2,1,1,2,2,2,2,0,1,1,1,19,2,2,0,0,4,3,2,3,12,22.0,1
+148,1,1,Engineering & IT,Engineering&IT,2,0,1,0,2,0,2,1,1,3,2,1,0,0,2,1,15,2,2,0,1,4,1,2,3,5,,
+149,2,1,Arts & Media,NonHealth,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,2,0,0,3,1,4,2,1,,
+150,1,1,Medicine & Health Sciences,Medicine&Health,1,0,2,0,3,2,0,0,0,0,1,0,0,0,0,1,8,1,3,0,0,4,1,2,3,11,24.0,1
+151,1,0,Engineering & IT,Engineering&IT,1,0,1,0,0,0,0,0,0,0,2,0,0,2,0,1,5,1,1,0,0,3,2,2,3,5,,
+152,1,1,Engineering & IT,Engineering&IT,1,0,0,1,0,0,0,0,0,1,0,0,0,0,1,1,3,1,1,0,0,1,1,2,2,5,,
+153,1,0,Engineering & IT,Engineering&IT,1,0,1,2,2,0,0,0,1,3,3,0,0,2,0,1,14,3,3,0,0,3,2,2,2,12,28.0,1
+154,1,0,Medicine & Health Sciences,Medicine&Health,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,2,2,2,1,9,4.0,0
+155,1,0,Medicine & Health Sciences,Medicine&Health,1,0,0,0,0,0,0,0,0,0,1,2,0,0,0,1,3,1,1,0,0,2,2,2,2,12,22.0,1
+156,1,1,Medicine & Health Sciences,Medicine&Health,1,0,1,1,1,0,0,0,0,0,1,1,0,0,0,1,5,1,2,0,0,2,2,1,3,5,,
+157,1,0,Medicine & Health Sciences,Medicine&Health,1,0,1,0,0,0,0,3,3,2,1,1,0,1,0,1,12,3,1,0,0,4,2,1,2,12,3.0,0
+158,2,0,Medicine & Health Sciences,Medicine&Health,5,0,3,3,3,1,1,0,0,0,2,0,0,0,0,1,13,2,3,1,1,4,1,2,3,5,,
+159,2,0,Medicine & Health Sciences,Medicine&Health,5,0,1,2,2,0,0,0,0,0,0,0,0,0,0,1,5,2,2,0,0,3,2,2,2,12,16.0,0
+160,1,1,Engineering & IT,Engineering&IT,1,0,1,2,0,0,0,0,0,0,1,0,0,0,1,1,5,1,4,1,0,4,2,2,3,4,,
+161,2,0,Medicine & Health Sciences,Medicine&Health,5,0,2,3,3,1,3,0,1,1,0,0,1,0,3,1,18,3,3,0,1,4,1,3,2,12,28.0,1
+162,2,0,Medicine & Health Sciences,Medicine&Health,5,0,1,2,2,2,0,0,1,0,2,0,0,0,0,1,10,2,2,0,0,4,1,3,3,12,24.0,1
+163,2,0,Medicine & Health Sciences,Medicine&Health,5,0,2,2,1,1,0,1,1,2,2,2,0,1,0,1,15,2,2,0,0,4,3,3,3,12,13.0,0
+164,1,0,Medicine & Health Sciences,Medicine&Health,1,0,0,0,0,0,0,0,0,0,2,0,0,2,0,1,4,2,1,0,0,3,1,1,2,12,14.0,0
+165,1,0,Medicine & Health Sciences,Medicine&Health,1,0,2,2,0,2,0,0,0,3,3,3,0,0,0,1,15,4,2,0,0,4,1,1,3,5,,
+166,1,0,Medicine & Health Sciences,Medicine&Health,1,0,1,1,0,0,0,0,0,0,2,0,0,1,0,1,5,2,2,0,0,3,1,2,3,12,7.0,0
+167,1,0,Medicine & Health Sciences,Medicine&Health,1,0,1,1,1,0,0,0,1,3,2,1,0,0,2,1,12,2,1,0,0,4,2,1,3,12,20.0,0
+168,2,0,Medicine & Health Sciences,Medicine&Health,5,0,2,2,1,0,2,1,2,1,3,1,0,2,0,1,17,2,3,0,0,4,2,3,3,5,,
+169,3,0,Medicine & Health Sciences,Medicine&Health,5,0,3,3,3,1,2,0,3,3,3,2,0,1,0,1,24,4,4,0,0,4,3,2,3,12,22.0,1
+170,2,0,Medicine & Health Sciences,Medicine&Health,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,3,2,2,2,12,6.0,0
+171,2,1,Medicine & Health Sciences,Medicine&Health,5,0,0,1,2,1,2,0,0,0,0,0,0,0,0,1,6,2,2,0,0,3,3,4,3,12,8.0,0
+172,3,0,Medicine & Health Sciences,Medicine&Health,5,1,3,3,3,3,1,0,2,3,3,3,0,3,0,1,27,4,4,1,0,4,1,2,2,12,12.0,0
+173,2,0,Medicine & Health Sciences,Medicine&Health,5,0,1,0,1,1,2,0,0,1,0,1,0,0,0,1,7,2,1,0,0,2,2,3,2,12,23.0,1
+174,2,0,Medicine & Health Sciences,Medicine&Health,5,0,1,1,1,1,0,0,1,0,0,0,0,0,0,1,5,2,2,0,0,4,1,2,3,12,20.0,0
+175,2,0,Medicine & Health Sciences,Medicine&Health,5,1,2,2,1,2,1,0,0,2,3,2,2,2,0,1,19,3,2,0,1,4,2,3,3,12,5.0,0
+176,2,0,Engineering & IT,Engineering&IT,5,0,3,1,1,0,0,3,3,0,3,0,0,3,0,1,17,4,4,0,1,4,1,2,3,12,34.0,1
+177,2,0,Pharmacy,OtherHealth,5,0,2,2,1,1,3,0,1,2,3,0,1,1,0,1,17,2,2,0,1,4,1,3,3,12,27.0,1
+178,2,0,Medicine & Health Sciences,Medicine&Health,3,0,1,1,1,1,2,0,0,1,1,0,0,1,0,1,9,1,2,0,0,3,3,2,3,12,12.0,0
+179,2,0,Medicine & Health Sciences,Medicine&Health,5,0,1,2,2,1,2,2,2,1,2,1,1,1,1,1,19,2,3,1,0,3,2,2,3,7,17.14,0
+180,2,0,Arts & Media,NonHealth,5,0,2,0,0,0,0,1,1,0,0,0,0,0,0,1,4,1,2,0,0,3,1,3,2,11,28.36,1
+181,2,0,Medicine & Health Sciences,Medicine&Health,5,0,0,0,0,0,0,0,2,0,1,0,0,0,0,1,3,1,2,0,0,3,2,2,2,12,5.0,0
+182,2,0,Engineering & IT,Engineering&IT,5,1,3,3,3,3,1,2,3,3,3,2,0,2,2,1,30,3,3,1,1,4,1,2,3,12,29.0,1
+183,2,0,Medicine & Health Sciences,Medicine&Health,5,0,2,2,2,0,1,0,2,1,2,1,0,1,0,1,14,2,2,0,0,4,2,1,3,12,19.0,0
+184,2,0,Medicine & Health Sciences,Medicine&Health,5,1,2,3,2,0,3,0,0,0,2,0,0,1,0,1,13,2,3,1,1,3,1,2,3,7,34.29,1
+185,2,0,Medicine & Health Sciences,Medicine&Health,5,0,0,0,0,0,0,0,0,0,2,0,0,1,0,1,3,2,1,0,0,4,2,3,3,12,17.0,0
+186,2,0,Dentistry,OtherHealth,5,0,3,3,2,0,0,0,2,1,0,0,0,0,3,1,14,4,4,1,,4,1,3,3,5,,
+187,2,0,Engineering & IT,Engineering&IT,5,0,2,3,3,3,3,2,2,3,3,1,0,2,1,1,28,2,3,1,1,4,3,1,3,12,29.0,1
+188,2,0,Medicine & Health Sciences,Medicine&Health,5,0,1,1,1,1,1,1,1,3,3,3,0,0,1,1,17,1,2,0,0,4,1,1,3,12,8.0,0
+189,2,1,Other,NonHealth,2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,2,2,1,2,5,,
+190,2,0,Medicine & Health Sciences,Medicine&Health,5,0,1,0,0,0,0,0,0,1,1,0,0,0,1,1,4,1,1,0,0,1,2,2,2,12,22.0,1
+191,2,1,Engineering & IT,Engineering&IT,2,0,1,0,0,0,0,0,0,1,0,0,0,0,0,1,2,1,1,0,0,1,2,2,3,12,9.0,0
+192,2,0,Medicine & Health Sciences,Medicine&Health,3,0,1,3,3,0,0,1,2,0,3,0,0,2,0,1,15,3,3,0,1,4,2,2,3,12,27.0,1
+193,2,1,Medicine & Health Sciences,Medicine&Health,2,0,0,0,0,1,0,0,0,0,2,0,0,0,0,1,3,2,1,0,0,2,2,1,2,12,6.0,0
+194,2,0,Engineering & IT,Engineering&IT,2,0,2,2,2,1,1,0,1,0,3,0,0,2,0,1,14,3,3,0,0,4,1,2,3,12,26.0,1
+195,2,1,Medicine & Health Sciences,Medicine&Health,4,0,1,1,0,0,0,0,0,2,2,0,0,2,0,1,8,1,1,0,0,1,1,1,3,5,,
+196,1,0,Arts & Media,NonHealth,1,0,3,2,1,2,1,0,0,2,2,0,0,1,0,1,14,2,4,0,0,4,2,2,3,12,30.0,1
+197,1,1,Medicine & Health Sciences,Medicine&Health,1,0,2,1,0,0,0,0,0,1,3,0,0,2,0,1,9,2,3,0,0,4,3,1,3,5,,
+198,1,1,Medicine & Health Sciences,Medicine&Health,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,2,0,0,1,1,2,2,12,18.0,0
+199,1,1,Engineering & IT,Engineering&IT,1,0,2,2,2,0,0,0,0,0,3,3,0,0,0,1,12,2,4,0,0,1,4,4,2,1,,
+200,1,1,Engineering & IT,Engineering&IT,1,0,1,0,0,0,0,0,1,1,0,0,0,1,0,1,4,1,1,1,0,3,3,2,3,2,,
+201,1,1,Medicine & Health Sciences,Medicine&Health,1,0,3,3,3,3,3,2,0,0,3,0,2,2,2,1,26,1,1,1,0,4,1,2,3,3,,
+202,1,1,Medicine & Health Sciences,Medicine&Health,1,0,3,2,0,3,0,0,2,3,2,0,0,0,2,1,17,2,2,0,0,3,1,2,1,4,,
+203,2,1,Dentistry,OtherHealth,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,2,2,2,2,4,,
+204,1,1,Dentistry,OtherHealth,1,0,1,0,0,0,0,0,0,0,1,1,0,0,2,1,5,2,2,0,1,3,2,3,1,3,,
+205,1,1,Engineering & IT,Engineering&IT,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,3,2,2,12,23.0,1
+206,1,1,Arts & Media,NonHealth,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,4,3,4,,
+207,1,1,Other,NonHealth,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,2,3,2,2,1,,
+208,1,1,Other,NonHealth,1,0,1,2,1,0,0,0,0,1,2,0,0,0,0,1,7,2,2,0,0,2,1,2,2,12,16.0,0
+209,2,1,Engineering & IT,Engineering&IT,3,0,0,3,3,2,0,0,0,1,3,0,0,2,0,1,14,2,1,0,0,2,3,2,2,12,7.0,0
+210,2,1,Engineering & IT,Engineering&IT,3,0,0,1,2,1,3,2,2,3,1,2,1,1,2,1,21,3,2,1,0,3,1,2,1,3,,
+211,2,1,Engineering & IT,Engineering&IT,3,0,0,1,2,1,1,2,1,1,2,1,1,1,1,1,15,2,2,1,0,3,2,2,1,3,,
+212,2,0,Other,NonHealth,3,1,1,1,1,1,0,0,0,0,1,0,0,0,0,1,5,2,3,0,1,3,1,1,2,12,25.0,1
+213,1,1,Medicine & Health Sciences,Medicine&Health,1,0,1,1,0,0,0,1,1,3,3,1,0,1,0,1,12,3,4,0,0,4,1,4,3,5,,
+214,1,1,Engineering & IT,Engineering&IT,1,0,1,1,0,0,1,0,1,1,1,0,0,0,0,1,6,1,2,0,0,3,1,3,3,12,11.0,0
+215,1,1,Engineering & IT,Engineering&IT,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,3,2,2,1,2,,
+216,2,0,Other,NonHealth,1,0,3,2,0,3,0,0,2,2,1,2,0,0,0,1,15,3,4,1,1,4,1,2,2,12,31.0,1
+217,2,0,Arts & Media,NonHealth,1,0,0,0,0,0,0,0,0,0,1,0,0,2,0,1,3,3,2,1,1,1,1,2,3,12,20.0,0
+218,2,0,Humanities & Social Sciences,NonHealth,2,0,0,0,0,0,0,0,0,0,2,0,0,0,0,1,2,1,1,0,0,1,2,2,2,11,13.09,0
+219,2,0,Humanities & Social Sciences,NonHealth,3,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,2,1,1,0,0,2,3,2,2,1,,
+220,2,1,Medicine & Health Sciences,Medicine&Health,1,0,1,0,0,1,1,0,1,1,1,0,0,0,0,1,6,2,2,0,0,3,2,3,3,11,21.82,1
+221,2,0,Sciences,OtherHealth,3,0,2,2,2,1,1,1,3,3,2,1,0,0,0,1,18,2,3,1,0,1,2,2,3,12,27.0,1
+222,2,0,Medicine & Health Sciences,Medicine&Health,3,0,1,0,0,0,1,0,0,0,0,0,0,1,0,1,3,2,1,0,0,3,3,2,2,11,16.36,0
+223,2,0,Medicine & Health Sciences,Medicine&Health,3,0,2,1,3,1,1,0,1,0,2,1,0,3,0,1,15,3,3,0,0,3,3,3,3,12,22.0,1
+224,1,1,Engineering & IT,Engineering&IT,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,2,2,2,2,12,10.0,0
+225,2,0,Arts & Media,NonHealth,3,0,3,2,3,2,0,0,1,1,1,1,0,0,0,1,14,3,2,0,0,4,2,3,3,12,22.0,1
+226,2,0,Engineering & IT,Engineering&IT,3,0,1,1,2,2,0,0,1,1,0,1,0,0,0,1,9,2,2,0,0,3,2,1,2,12,13.0,0
+227,2,1,Humanities & Social Sciences,NonHealth,2,0,2,1,1,0,0,0,2,1,0,0,0,0,0,1,7,2,2,0,0,3,1,2,3,4,,
+228,1,1,Medicine & Health Sciences,Medicine&Health,1,0,1,2,2,1,2,1,1,1,2,1,0,1,1,1,16,1,3,0,0,3,2,2,3,12,28.0,1
+229,1,0,Medicine & Health Sciences,Medicine&Health,1,0,2,2,2,1,0,0,0,0,3,0,0,0,0,1,10,3,3,0,0,4,2,2,3,12,28.0,1
+230,1,0,Medicine & Health Sciences,Medicine&Health,1,0,2,0,0,0,0,0,1,1,0,0,0,0,1,1,5,3,2,0,0,4,3,1,3,12,21.0,1
+231,1,0,Medicine & Health Sciences,Medicine&Health,1,0,2,2,2,3,0,1,3,2,0,0,0,0,0,1,15,3,2,0,0,4,3,2,2,12,23.0,1
+232,1,0,Medicine & Health Sciences,Medicine&Health,1,0,1,2,2,2,0,0,1,1,0,2,0,0,0,1,11,1,2,0,0,4,3,1,2,12,28.0,1
+233,1,1,Medicine & Health Sciences,Medicine&Health,1,0,1,0,0,2,2,0,2,0,2,0,0,0,0,1,9,2,2,0,0,3,2,1,2,12,6.0,0
+234,1,0,Medicine & Health Sciences,Medicine&Health,1,0,2,1,0,0,0,0,2,0,3,0,0,1,0,1,9,2,3,0,0,3,3,2,3,12,18.0,0
+235,1,0,Medicine & Health Sciences,Medicine&Health,1,0,1,1,1,3,3,3,3,3,3,3,3,3,3,1,33,2,2,0,1,3,2,2,2,5,,
+236,1,1,Medicine & Health Sciences,Medicine&Health,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,2,4,1,2,12,0.0,0
+237,1,1,Medicine & Health Sciences,Medicine&Health,1,0,0,0,1,0,0,0,0,2,0,0,0,0,2,1,5,2,2,1,0,4,1,2,3,12,22.0,1
+238,1,0,Medicine & Health Sciences,Medicine&Health,1,0,2,1,0,1,0,3,3,2,3,2,0,3,0,1,20,3,4,0,0,4,1,1,3,12,36.0,1
+239,1,0,Engineering & IT,Engineering&IT,1,0,2,1,2,2,0,0,0,2,2,2,0,0,3,1,16,2,3,0,0,4,1,3,3,12,9.0,0
+240,1,0,Engineering & IT,Engineering&IT,1,0,1,0,0,0,0,0,0,0,2,0,0,3,0,1,6,3,2,0,0,1,3,2,2,12,21.0,1
+241,1,0,Dentistry,OtherHealth,1,0,0,0,2,0,0,0,0,2,2,2,0,0,2,1,10,2,3,1,0,4,2,2,3,12,32.0,1
+242,2,0,Sciences,OtherHealth,2,0,0,1,0,2,0,3,0,2,1,0,1,0,1,1,11,2,2,1,0,4,2,2,1,5,,
+243,2,0,Dentistry,OtherHealth,2,0,1,1,1,1,3,0,0,0,0,0,0,2,0,1,9,2,1,0,0,4,1,1,3,12,17.0,0
+244,1,0,Medicine & Health Sciences,Medicine&Health,1,0,2,2,1,0,0,0,0,1,1,1,0,2,1,1,11,1,2,0,0,3,2,2,2,5,,
+245,1,1,Medicine & Health Sciences,Medicine&Health,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,2,1,1,3,12,15.0,0
+246,1,0,Medicine & Health Sciences,Medicine&Health,1,0,2,3,3,0,3,1,1,1,2,1,1,1,0,1,19,3,3,0,0,3,2,2,3,12,18.0,0
+247,1,0,Engineering & IT,Engineering&IT,1,0,3,1,0,2,0,2,3,3,2,2,0,1,0,1,19,2,4,0,0,4,1,1,3,12,26.0,1
+248,2,0,Medicine & Health Sciences,Medicine&Health,2,1,1,3,3,0,0,3,3,3,3,0,0,0,3,1,22,4,4,1,1,4,1,4,3,12,27.0,1
+249,1,1,Dentistry,OtherHealth,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,8,1,1,1,0,4,1,1,3,2,,
+250,2,1,Medicine & Health Sciences,Medicine&Health,2,1,3,2,3,0,0,2,2,3,2,0,0,0,3,1,20,4,3,1,1,4,1,4,3,12,21.0,1
+251,1,1,Medicine & Health Sciences,Medicine&Health,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,2,3,2,1,3,,
+252,2,0,Engineering & IT,Engineering&IT,4,0,2,2,2,0,0,1,2,1,3,1,0,0,1,1,15,2,3,0,1,4,1,2,3,12,24.0,1
+253,2,0,Humanities & Social Sciences,NonHealth,4,0,3,1,1,2,0,1,2,2,0,0,0,3,0,1,15,2,2,0,0,4,3,1,2,5,,
+254,1,1,Medicine & Health Sciences,Medicine&Health,1,0,1,0,2,0,0,0,0,0,2,1,0,0,1,1,7,3,2,0,0,3,3,2,2,4,,
+255,1,0,Other,NonHealth,1,0,3,2,2,3,0,0,3,0,3,1,0,2,0,1,19,3,4,0,0,4,3,1,2,12,14.0,0
+256,1,0,Medicine & Health Sciences,Medicine&Health,1,0,2,2,1,1,1,0,3,2,2,3,0,0,3,1,20,2,2,0,1,4,1,3,3,12,21.0,1
+257,1,0,Medicine & Health Sciences,Medicine&Health,2,0,2,3,2,1,1,2,3,0,3,2,0,0,1,1,20,4,4,0,0,4,2,2,3,12,31.0,1
+258,1,1,Engineering & IT,Engineering&IT,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,2,1,1,0,0,2,2,1,2,12,11.0,0
+259,1,0,Arts & Media,NonHealth,3,0,3,2,3,1,2,2,2,3,3,1,0,0,2,1,24,3,3,1,1,4,2,3,3,10,22.8,1
+260,2,1,Medicine & Health Sciences,Medicine&Health,3,0,2,2,1,1,3,1,2,2,3,0,2,0,0,1,19,2,2,1,1,4,1,2,3,12,21.0,1
+261,1,1,Engineering & IT,Engineering&IT,1,0,1,2,2,1,0,0,0,2,3,1,0,1,0,1,13,3,3,0,0,3,1,2,3,12,16.0,0
+262,1,1,Engineering & IT,Engineering&IT,1,0,2,1,2,1,1,0,0,1,1,0,0,0,0,1,9,3,3,0,0,4,1,3,2,12,8.0,0
+263,1,1,Dentistry,OtherHealth,1,0,1,0,0,0,0,0,0,0,2,0,0,1,0,1,4,1,2,0,0,4,2,3,2,5,,
+264,2,1,Medicine & Health Sciences,Medicine&Health,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,1,2,1,,
+265,1,1,Engineering & IT,Engineering&IT,1,0,0,0,0,0,0,1,2,2,3,0,0,3,0,1,11,3,2,0,0,3,2,3,3,12,13.0,0
+266,1,1,Dentistry,OtherHealth,1,0,1,1,1,0,0,0,0,1,0,0,0,0,2,1,6,2,2,0,0,3,3,3,2,12,26.0,1
+267,1,1,Dentistry,OtherHealth,1,0,2,2,2,0,0,0,0,1,1,2,0,0,0,1,10,2,2,0,0,3,4,1,2,12,0.0,0
+268,1,1,Medicine & Health Sciences,Medicine&Health,1,0,2,1,0,0,0,1,2,3,3,2,0,1,0,1,15,2,1,0,0,4,2,2,3,12,19.0,0
+269,2,1,Medicine & Health Sciences,Medicine&Health,5,0,0,0,0,0,0,0,0,0,3,1,0,0,0,1,4,1,1,1,0,4,1,4,2,12,0.0,0
+270,1,1,Engineering & IT,Engineering&IT,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,2,2,12,15.0,0
+271,2,1,Humanities & Social Sciences,NonHealth,3,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,1,4,2,2,12,13.0,0
+272,2,0,Pharmacy,OtherHealth,5,0,2,0,0,0,0,3,3,3,3,3,0,0,0,1,17,3,2,0,0,4,1,1,3,12,36.0,1
+273,2,1,Engineering & IT,Engineering&IT,4,1,2,3,3,3,0,0,1,1,0,0,0,0,1,1,14,2,2,1,1,3,2,2,3,10,16.8,0
+274,2,0,Engineering & IT,Engineering&IT,4,0,3,3,2,3,1,1,2,2,3,1,0,0,1,1,22,2,2,0,0,4,2,1,3,12,14.0,0
+275,2,0,Pharmacy,OtherHealth,4,0,2,3,3,1,1,0,1,2,1,0,0,0,2,1,16,3,3,0,0,2,2,1,3,12,29.0,1
+276,2,0,Engineering & IT,Engineering&IT,2,0,1,3,1,0,3,0,0,0,3,3,0,2,0,1,16,3,3,0,1,4,2,2,3,12,30.0,1
+277,2,0,Engineering & IT,Engineering&IT,4,0,2,3,2,1,2,0,2,3,3,0,1,0,2,1,21,3,2,0,0,4,1,2,3,4,,
+278,1,1,Engineering & IT,Engineering&IT,1,0,2,0,2,0,0,0,2,1,3,1,0,0,0,1,11,2,3,0,0,4,1,2,3,12,31.0,1
+279,1,1,Engineering & IT,Engineering&IT,1,0,1,0,0,0,0,0,0,1,1,1,0,0,0,1,4,2,2,0,0,3,3,2,1,12,15.0,0
+280,1,1,Engineering & IT,Engineering&IT,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,2,1,2,2,1,,
+281,1,0,Engineering & IT,Engineering&IT,1,1,2,3,1,0,3,0,0,2,3,2,3,3,0,1,22,2,2,0,1,1,1,3,3,12,20.0,0
+282,2,0,Humanities & Social Sciences,NonHealth,4,0,1,2,2,0,2,0,1,2,2,0,0,0,2,1,14,2,2,0,0,3,1,1,3,11,10.91,0
+283,2,0,Pharmacy,OtherHealth,2,0,2,3,2,2,2,0,0,3,3,0,0,3,0,1,20,3,4,0,0,4,1,3,3,12,36.0,1
+284,1,0,Sciences,OtherHealth,2,0,3,3,3,3,3,0,3,1,3,2,2,2,0,1,28,3,3,1,1,4,2,1,3,12,34.0,1
+285,2,0,Medicine & Health Sciences,Medicine&Health,2,0,2,3,0,0,0,0,0,0,3,2,0,2,3,1,15,3,3,0,0,4,1,1,3,12,31.0,1
+286,2,0,Humanities & Social Sciences,NonHealth,3,0,1,1,0,0,2,0,0,0,0,0,0,0,0,1,4,2,2,0,0,2,1,1,3,12,30.0,1
+287,2,0,Engineering & IT,Engineering&IT,5,0,2,3,3,2,1,0,1,1,0,0,1,0,2,1,16,3,3,0,0,4,1,3,3,12,28.0,1
+288,2,0,Engineering & IT,Engineering&IT,5,0,3,3,3,0,3,0,1,2,3,1,1,0,0,1,20,4,3,1,1,4,2,3,3,12,26.0,1
+289,2,0,Engineering & IT,Engineering&IT,4,0,3,3,3,0,2,2,3,3,3,0,0,2,1,1,25,4,4,1,1,4,2,2,3,12,36.0,1
+290,1,0,Pharmacy,OtherHealth,1,0,0,1,1,0,0,0,1,1,1,0,0,0,0,1,5,2,3,1,0,4,1,1,3,5,,
+291,4,0,Humanities & Social Sciences,NonHealth,5,1,1,2,2,0,0,0,1,2,2,0,0,1,0,1,11,2,2,1,0,2,3,2,2,5,,
+292,1,1,Engineering & IT,Engineering&IT,1,0,0,0,0,0,0,0,0,0,0,0,0,0,3,1,3,4,4,0,0,3,4,2,3,5,,
+293,1,1,Humanities & Social Sciences,NonHealth,1,1,3,0,1,0,1,1,0,2,2,0,0,0,1,1,11,4,3,1,0,3,2,3,3,12,23.0,1
+294,2,0,Humanities & Social Sciences,NonHealth,3,0,2,1,1,2,0,0,0,0,2,2,0,0,0,1,10,2,1,0,0,4,2,2,2,12,21.0,1
+295,1,0,Dentistry,OtherHealth,1,1,2,1,1,2,0,0,2,0,1,0,0,0,0,1,9,2,2,0,1,3,2,2,2,12,7.0,0
+296,1,0,Engineering & IT,Engineering&IT,1,0,0,3,1,0,0,1,1,2,3,1,0,3,3,1,18,3,3,0,0,3,2,2,3,12,36.0,1
+297,2,0,Medicine & Health Sciences,Medicine&Health,3,0,2,2,2,0,0,0,1,2,1,0,0,0,2,1,12,2,2,0,0,2,2,2,3,12,17.0,0
+298,2,0,Humanities & Social Sciences,NonHealth,3,0,0,0,1,0,0,0,1,2,0,2,0,0,0,1,6,2,2,0,0,2,2,1,2,4,,
+299,2,0,Humanities & Social Sciences,NonHealth,2,1,3,3,3,2,1,1,3,2,3,1,1,2,0,1,25,3,4,1,0,4,2,2,3,12,33.0,1
+300,2,1,Engineering & IT,Engineering&IT,5,0,2,0,2,2,0,0,1,3,2,0,0,2,0,1,14,2,2,0,1,4,2,4,3,12,15.0,0
+301,2,0,Humanities & Social Sciences,NonHealth,2,0,3,3,3,1,1,0,3,1,3,0,0,1,1,1,20,4,4,0,0,4,2,1,3,12,11.0,0
+302,2,0,Arts & Media,NonHealth,3,1,3,2,2,3,0,2,3,2,2,0,0,0,0,1,19,2,4,1,0,4,1,3,2,12,29.0,1
+303,1,1,Engineering & IT,Engineering&IT,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,3,1,2,12,0.0,0
+304,1,0,Engineering & IT,Engineering&IT,1,0,2,2,2,0,0,0,2,2,2,2,0,0,0,1,14,2,2,0,0,3,3,1,2,12,4.0,0
+305,2,0,Other,NonHealth,4,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,2,1,1,0,0,1,3,3,2,12,20.0,0
+306,1,0,Humanities & Social Sciences,NonHealth,2,0,1,1,0,0,0,0,0,0,2,0,0,0,1,1,5,2,2,0,0,2,2,1,2,12,23.0,1
+307,2,1,Other,NonHealth,4,0,1,1,3,0,0,0,0,1,0,0,0,0,0,1,6,2,1,0,0,1,3,2,2,12,17.0,0
+308,2,0,Medicine & Health Sciences,Medicine&Health,3,0,2,2,0,0,0,0,0,2,2,1,0,1,0,1,10,2,2,0,0,4,1,1,3,5,,
+309,1,0,Engineering & IT,Engineering&IT,1,0,3,3,3,0,0,0,1,3,0,0,1,2,0,1,16,4,4,0,1,4,3,3,3,12,28.0,1
+310,1,0,Engineering & IT,Engineering&IT,1,0,2,3,1,0,2,0,0,0,3,0,0,3,0,1,14,2,4,0,1,4,1,1,2,5,,
+311,2,0,Pharmacy,OtherHealth,5,1,2,0,1,0,0,0,3,3,2,0,1,1,0,1,13,3,2,1,1,4,1,1,3,12,31.0,1
+312,2,1,Humanities & Social Sciences,NonHealth,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,4,4,2,12,0.0,0
+313,2,0,Engineering & IT,Engineering&IT,3,0,1,1,2,0,1,0,0,0,2,1,0,2,0,1,10,2,2,0,0,4,1,3,3,12,22.0,1
+314,1,0,Engineering & IT,Engineering&IT,1,0,0,0,0,0,0,0,0,1,3,0,0,1,0,1,5,2,1,0,0,4,1,4,3,12,14.0,0
+315,2,0,Humanities & Social Sciences,NonHealth,4,1,2,1,3,2,2,2,1,3,1,2,0,0,2,1,21,2,3,1,1,3,1,2,2,12,17.0,0
+316,2,0,Humanities & Social Sciences,NonHealth,4,0,2,3,3,0,2,0,1,1,0,0,0,0,3,1,15,3,3,0,0,4,1,2,3,12,23.0,1
+317,2,1,Engineering & IT,Engineering&IT,4,0,2,0,0,0,0,0,3,0,1,0,0,0,2,1,8,3,3,1,0,4,3,1,3,12,16.0,0
+318,1,0,Medicine & Health Sciences,Medicine&Health,1,0,2,1,0,0,0,0,0,0,2,0,0,0,0,1,5,2,2,0,0,3,3,2,3,10,16.8,0
+319,2,0,Humanities & Social Sciences,NonHealth,2,0,2,1,2,1,1,3,2,1,3,1,0,2,1,1,20,2,3,0,0,4,1,1,3,12,29.0,1
+320,2,0,Engineering & IT,Engineering&IT,4,0,2,3,3,0,2,3,3,3,2,1,0,2,0,1,24,3,4,1,0,4,3,2,3,4,,
+321,2,0,Humanities & Social Sciences,NonHealth,4,0,0,1,0,0,0,0,0,0,2,0,0,0,1,1,4,1,1,0,0,1,2,2,2,12,12.0,0
+322,1,1,Sciences,OtherHealth,1,0,2,0,2,0,2,0,0,2,3,2,0,3,0,1,16,3,4,1,1,1,2,3,3,4,,
+323,1,0,Engineering & IT,Engineering&IT,1,0,1,3,0,0,0,0,2,3,0,0,0,0,0,1,9,2,2,0,0,2,1,1,2,11,15.27,0
+324,1,0,Medicine & Health Sciences,Medicine&Health,1,0,0,2,1,1,0,0,0,0,0,0,0,0,0,1,4,2,2,0,0,1,2,2,2,12,28.0,1
+325,2,0,Engineering & IT,Engineering&IT,5,0,2,2,2,1,2,0,0,1,0,0,0,0,2,1,12,2,3,0,0,3,2,2,3,12,24.0,1
+326,2,0,Medicine & Health Sciences,Medicine&Health,1,0,3,3,0,1,1,3,3,3,3,3,0,1,0,1,24,4,4,0,0,4,1,2,2,12,36.0,1
+327,1,0,Engineering & IT,Engineering&IT,1,0,2,1,1,2,1,0,0,2,1,0,0,1,0,1,11,2,2,0,0,4,3,2,2,5,,
+328,2,0,Nursing,OtherHealth,3,0,2,0,0,0,0,2,2,2,2,0,0,0,0,1,10,2,2,0,0,4,1,2,3,12,21.0,1
+329,2,0,Engineering & IT,Engineering&IT,4,1,2,2,3,2,2,0,1,3,2,0,3,0,2,1,22,4,3,0,1,1,1,3,3,12,18.0,0
+330,2,0,Pharmacy,OtherHealth,5,0,2,2,3,0,3,0,0,2,2,0,3,0,0,1,17,3,3,1,0,4,1,3,3,12,29.0,1
+331,1,0,Other,NonHealth,1,0,2,0,0,0,0,0,1,1,1,0,0,0,0,1,5,2,2,0,0,3,1,4,3,12,26.0,1
+332,2,1,Medicine & Health Sciences,Medicine&Health,3,0,2,0,0,2,2,3,2,1,3,2,0,1,1,1,19,3,3,0,0,4,2,2,3,12,24.0,1
+333,1,1,Medicine & Health Sciences,Medicine&Health,1,0,0,0,0,0,1,0,0,0,1,0,0,1,0,1,3,1,1,0,0,2,2,2,3,12,15.0,0
+334,1,0,Arts & Media,NonHealth,1,0,1,2,2,0,0,0,0,2,2,0,0,2,0,1,11,2,2,0,1,3,2,2,3,4,,
+335,2,1,Medicine & Health Sciences,Medicine&Health,3,0,1,1,1,1,1,0,1,2,1,0,0,1,0,1,10,2,2,0,0,1,1,2,3,12,11.0,0
+336,2,0,Medicine & Health Sciences,Medicine&Health,5,0,1,1,0,0,0,0,2,0,2,0,0,0,0,1,6,3,2,0,0,4,3,2,3,11,25.09,1
+337,2,1,Medicine & Health Sciences,Medicine&Health,5,0,2,2,2,1,0,0,0,2,1,0,0,1,0,1,11,2,2,0,0,3,1,3,3,12,17.0,0
+338,3,1,Medicine & Health Sciences,Medicine&Health,5,0,3,1,1,0,1,0,0,0,2,0,0,2,0,1,10,3,3,0,0,4,2,3,3,12,14.0,0
+339,2,0,Dentistry,OtherHealth,4,0,2,1,1,1,1,0,0,1,0,0,0,0,2,1,9,3,2,0,0,4,2,2,3,12,20.0,0
+340,2,1,Medicine & Health Sciences,Medicine&Health,4,0,3,1,1,0,0,0,1,2,0,0,0,2,0,1,10,3,2,0,0,4,2,4,3,12,22.0,1
+341,2,0,Engineering & IT,Engineering&IT,5,0,1,3,1,1,3,1,3,0,3,0,0,3,0,1,19,3,2,0,0,4,1,3,3,12,28.0,1
+342,2,1,Dentistry,OtherHealth,5,0,1,0,0,0,0,0,0,1,0,0,0,0,2,1,4,2,1,0,0,1,4,3,3,3,,
+343,2,1,Dentistry,OtherHealth,4,0,1,0,0,0,1,0,1,0,0,0,0,0,0,1,3,2,2,0,0,3,2,2,3,5,,
+344,2,0,Arts & Media,NonHealth,4,0,1,1,0,0,0,0,1,2,0,0,0,0,2,1,7,2,2,0,0,4,2,4,3,12,18.0,0
+345,1,0,Medicine & Health Sciences,Medicine&Health,2,0,2,2,2,2,2,1,2,1,0,0,0,0,1,1,15,2,2,0,0,2,3,3,2,1,,
+346,1,0,Medicine & Health Sciences,Medicine&Health,2,0,0,1,1,1,0,1,1,0,1,1,0,0,1,1,8,2,2,1,0,4,2,2,3,3,,
+347,1,0,Medicine & Health Sciences,Medicine&Health,2,0,1,0,2,0,0,0,1,0,1,0,0,1,0,1,6,1,2,0,0,3,2,1,2,3,,
+348,2,0,Dentistry,OtherHealth,5,0,2,2,1,2,1,0,0,2,0,0,0,0,2,1,12,2,3,0,0,4,1,3,3,12,27.0,1
+349,2,0,Engineering & IT,Engineering&IT,5,0,3,3,0,0,0,0,0,3,0,0,0,0,1,1,10,3,4,0,0,1,2,3,2,12,36.0,1
+350,2,1,Engineering & IT,Engineering&IT,4,0,1,2,0,0,2,0,3,0,3,0,0,0,0,1,11,2,3,0,0,3,1,3,2,5,,
+351,3,1,Medicine & Health Sciences,Medicine&Health,5,0,0,1,1,2,2,0,1,1,1,0,0,2,3,1,14,3,3,0,0,3,3,2,2,12,22.0,1
+352,3,1,Medicine & Health Sciences,Medicine&Health,5,0,2,1,1,2,1,0,0,0,0,0,0,0,2,1,9,2,2,0,0,3,3,2,3,12,31.0,1
+353,1,1,Humanities & Social Sciences,NonHealth,1,0,2,2,2,0,0,0,0,1,0,0,0,0,0,1,7,3,3,0,0,3,2,2,2,12,18.0,0
+354,3,1,Medicine & Health Sciences,Medicine&Health,5,0,1,1,0,0,0,0,1,0,1,1,0,1,0,1,6,2,2,0,0,3,3,3,3,12,8.0,0
+355,3,1,Engineering & IT,Engineering&IT,5,0,0,0,0,0,0,1,1,1,0,0,0,1,1,1,5,2,1,0,0,4,1,2,3,2,,
+356,3,1,Medicine & Health Sciences,Medicine&Health,5,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,1,1,2,3,12,18.0,0
+357,3,1,Medicine & Health Sciences,Medicine&Health,5,0,1,3,3,1,1,0,1,2,1,0,0,0,2,1,15,3,3,0,0,3,2,2,3,12,16.0,0
+358,3,1,Medicine & Health Sciences,Medicine&Health,5,0,1,2,3,2,1,0,1,2,1,0,1,1,2,1,17,3,2,1,1,4,3,2,3,5,,
+359,2,1,Medicine & Health Sciences,Medicine&Health,4,0,0,2,0,0,0,0,0,0,2,0,0,0,0,1,4,4,3,0,0,4,2,2,2,5,,
+360,2,1,Medicine & Health Sciences,Medicine&Health,4,0,3,3,3,3,0,0,0,0,0,0,0,0,0,1,12,4,3,0,0,4,2,2,3,12,22.0,1
+361,2,1,Medicine & Health Sciences,Medicine&Health,4,0,3,3,3,3,0,2,3,3,3,3,0,3,0,1,29,3,1,0,1,4,4,2,2,4,,
+362,2,0,Medicine & Health Sciences,Medicine&Health,5,0,1,0,2,2,0,0,3,0,3,0,0,3,0,1,14,3,1,0,0,4,1,3,3,12,26.0,1
+363,1,1,Medicine & Health Sciences,Medicine&Health,1,0,1,1,2,1,0,0,1,2,1,0,1,3,0,1,13,2,2,0,0,3,1,2,2,12,8.0,0
+364,1,1,Medicine & Health Sciences,Medicine&Health,1,0,2,2,2,2,2,2,2,2,2,2,2,2,2,1,26,3,3,0,0,4,2,2,2,8,24.0,1
+365,1,1,Medicine & Health Sciences,Medicine&Health,1,0,1,2,2,1,0,0,1,2,2,0,2,3,0,1,16,2,3,0,0,4,1,2,3,12,11.0,0
+366,1,1,Medicine & Health Sciences,Medicine&Health,1,0,0,1,1,0,2,0,1,1,2,1,2,2,0,1,13,3,1,0,0,4,1,3,2,12,17.0,0
+367,1,1,Medicine & Health Sciences,Medicine&Health,1,0,0,3,2,1,0,1,2,2,3,1,3,3,0,1,21,2,1,0,0,4,1,1,2,12,14.0,0
+368,1,1,Medicine & Health Sciences,Medicine&Health,1,0,0,1,2,0,2,1,2,2,2,1,2,0,3,1,18,1,1,0,0,4,1,2,2,10,12.0,0
+369,1,1,Medicine & Health Sciences,Medicine&Health,2,0,1,2,1,2,0,1,0,1,3,1,3,0,0,1,15,4,1,0,0,4,1,4,2,12,11.0,0
+370,2,0,Medicine & Health Sciences,Medicine&Health,5,0,1,1,1,1,1,1,2,2,0,1,0,1,0,1,12,2,2,0,0,3,2,3,3,5,,
